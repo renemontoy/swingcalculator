@@ -378,7 +378,7 @@ const styles = {
     },
     rightCol: { 
       display: "flex", 
-      flexDirection: "column", 
+      flexDirection: "column",
       gap: "19px",
       width: "min(30vw, 300px)",
       alignItems: "center", // Centra los elementos hijos horizontalmente
@@ -386,21 +386,22 @@ const styles = {
     midCol: { 
       display: "flex", 
       flexDirection: "column",
-      marginTop: "1.5vw", 
-      gap: "45px",
-      width: "min(30vw, 300px)",
-      alignItems: "center", // Centra los elementos hijos horizontalmente
+      marginTop: "1.6vw", 
+      gap: "44px",
+      marginRight: "13vw",
+      width: "min(30vw, 30px)",
+      textAlign: "right",// Centra los elementos hijos horizontalmente
     },
     resultRow: {
       display: "flex",
       justifyContent: "space-between",
-      border: "1px solid #aaa",
+      border: "1px solid #aaaaaaff",
       background: "#e0e0e0",
       padding: "16px",
-      width: "min(30vw, 350px)"
+      width: "min(30vw, 450px)"
     },
     resultBox: {
-      background: "#ccc",
+      background: "#63ff1bff",
       padding: ".20vw .25vw",
       fontWeight: "bold",
       fontSize: "clamp(14px, 1.5vw, 35px)"
