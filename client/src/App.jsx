@@ -2,65 +2,65 @@ import { useState, useMemo } from "react";
 
 export default function SwingweightCalculator() {
   const shaftList = {
-    "Mitsubishi MMT 50 L- Parallel": "C7",
-    "Mitsubishi MMT 60 A- Parallel": "C9",
-    "Mitsubishi MMT 70 R- Parallel": "C9",
-    "Mitsubishi MMT 80 S- Parallel": "C9",
-    "KBS-S-Taper-Lite-R-Parallel": "C9",
-    "Project X Cypher 2.0 40i 4.0 - Parallel": "C6",
-    "Project X Cypher 2.0 50i 5.0 - Parallel": "C7",
-    "Project X Cypher 2.0 60i 5.5 - Parallel": "C7",
-    "KBS Max Graphite 45 L- Parallel": "C7",
-    "KBS Max Graphite 55 A- Parallel": "C8",
-    "KBS Max Graphite 65 R- Parallel": "C8",
-    "KBS-TGIGraphite-70-R-Iron": "C9",
-    "KBS-TGIGraphite-80-S-Iron": "D0",
     "Accra iSeries 50i": "C8",
     "Accra iSeries 60i": "C8",
     "Accra iSeries 70i": "C8",
     "Accra iSeries 80i": "C8",
+    "Accra iSteel Green 105 R - Parallel": "D1",
+    "Accra iSteel Green 115 S - Parallel": "D2",
+    "Accra iSteel Green 125 X - 7ir": "D4",
+    "Aerotech SteelFiber Private Reserve 110S - Parallel": "C8",
     "Aerotech SteelFiber Private Reserve 60A - Parallel": "C8",
     "Aerotech SteelFiber Private Reserve 70R - Parallel": "C8",
     "Aerotech SteelFiber Private Reserve 95R - Parallel": "D0",
     "Aerotech SteelFiber Private Reserve 95S - Parallel": "C9",
-    "Aerotech SteelFiber Private Reserve 110S - Parallel": "C8",
-    "UST Recoil 55 Dart F1- L": "C6",
-    "UST Recoil 65 Dart F2- A": "C7",
-    "UST Recoil 75 Dart F3- R": "C9",
-    "UST Recoil 75 Dart F4- S": "C8",
+    "Dynamic Gold 105 S- 7": "D2",
+    "Dynamic Gold 120 S- 7": "D3",
+    "Dynamic Gold 120 X- 7": "D2",
+    "Dynamic Gold 95 R - Parallel": "C9",
+    "Dynamic Gold 95 S - Parallel": "C9",
     "Dynamic Gold MID 115 R - Parallel": "D0",
     "Dynamic Gold MID 115 S - Parallel": "D1",
     "Dynamic Gold MID 115 X - Parallel": "D1",
-    "ProjectX-PX-6.5-X-7ir": "D2",
+    "Dynamic-Gold-105-R-7ir": "D1",
+    "Dynamic-Gold-X100-X-7ir": "D2",
+    "Elevate MP 95g R- Parallel": "D0",
+    "Elevate MP 95g S- Parallel": "D1",
+    "KBS Max Graphite 45 L- Parallel": "C7",
+    "KBS Max Graphite 55 A- Parallel": "C8",
+    "KBS Max Graphite 65 R- Parallel": "C8",
+    "KBS-S-Taper-Lite-R-Parallel": "C9",
+    "KBS-STaperLite-115-S-7ir": "C9",
+    "KBS-CTaper-120-S-7ir": "D2",
+    "KBS-CTaper-130-X-7ir": "D3",
+    "KBS-TGIGraphite-70-R-Iron": "C9",
+    "KBS-TGIGraphite-80-S-Iron": "D0",
     "KBS-Tour-110-R-7ir": "D0",
     "KBS-Tour-120-S-7ir": "D2",
     "KBS-Tour-130-X-7ir": "D1",
-    "KBS-CTaper-120-S-7ir": "D2",
-    "KBS-CTaper-130-X-7ir": "D3",
+    "Mitsubishi MMT 50 L- Parallel": "C7",
+    "Mitsubishi MMT 60 A- Parallel": "C9",
+    "Mitsubishi MMT 70 R- Parallel": "C9",
+    "Mitsubishi MMT 80 S- Parallel": "C9",
+    "Mitsubishi MMT Taper 105 S - 7ir": "",
+    "Mitsubishi MMT Taper 125 X - 7ir": "D2",
     "Nippon Modus Pro 105 R- 7": "D1",
+    "Nippon-NSPro-950GH-R-7ir": "D0",
+    "Nippon-NSPro-950GH-S-7ir": "D0",
     "Nippon-ModusPro-105-S-7ir": "D0",
     "Nippon-ModusPro-105-X-7ir": "D1",
     "Nippon-ModusPro-120-S-7ir": "D1",
     "Nippon-ModusPro-120-X-7ir": "D2",
-    "Dynamic-Gold-105-R-7ir": "D1",
-    "Dynamic Gold 105 S- 7": "D2",
-    "Dynamic Gold 120 S- 7": "D3",
-    "Dynamic Gold 120 X- 7": "D2",
-    "Dynamic-Gold-X100-X-7ir": "D2",
-    "Elevate MP 95g R- Parallel": "D0",
-    "Elevate MP 95g S- Parallel": "D1",
+    "Project X Cypher 2.0 40i 4.0 - Parallel": "C6",
+    "Project X Cypher 2.0 50i 5.0 - Parallel": "C7",
+    "Project X Cypher 2.0 60i 5.5 - Parallel": "C7",
     "ProjectX-PXLZ-6.0-S+-7ir": "D2",
     "ProjectX-PXLZ-6.5-X-7ir": "D3",
-    "Dynamic Gold 95 R - Parallel": "C9",
-    "Dynamic Gold 95 S - Parallel": "C9",
-    "Nippon-NSPro-950GH-R-7ir": "D0",
-    "Nippon-NSPro-950GH-S-7ir": "D0",
-    "KBS-STaperLite-115-S-7ir": "C9",
-    "Mitsubishi MMT Taper 105 S - 7ir": "",
-    "Mitsubishi MMT Taper 125 X - 7ir": "D2",
-    "Accra iSteel Green 105 R - Parallel": "D1",
-    "Accra iSteel Green 115 S - Parallel": "D2",
-    "Accra iSteel Green 125 X - 7ir": "D4"
+    "ProjectX-PX-6.5-X-7ir": "D2",
+    "UST Recoil 55 Dart F1- L": "C6",
+    "UST Recoil 65 Dart F2- A": "C7",
+    "UST Recoil 75 Dart F3- R": "C9",
+    "UST Recoil 75 Dart F4- S": "C8"
   };
 
   const headList = {
@@ -153,9 +153,9 @@ export default function SwingweightCalculator() {
 
   const adjustmentList = {
     "Standard": 0,
-    "1" : 1,
-    "2" : 2,
-    "3" : 3,
+    "+1" : 1,
+    "+2" : 2,
+    "+3" : 3,
     "-1" : -1,
     "-2" : -2
   };
@@ -188,12 +188,12 @@ export default function SwingweightCalculator() {
   };
 
   // --- Estado del formulario ---
-  const [shaft, setShaft] = useState("Accra iSteel Green 125 X - 7ir");
+  const [shaft, setShaft] = useState("Accra iSeries 50i");
   const [head, setHead] = useState("0311 XP - 7 Iron");
-  const [length, setLength] = useState("+1/4");
-  const [grip, setGrip] = useState("Golf Pride MCC +4 Align Standard");
+  const [length, setLength] = useState("Standard");
+  const [grip, setGrip] = useState("PXG Z5 Standard");
   const [wrap, setWrap] = useState("Standard");
-  const [adjustment, setAdjustment] = useState("1");
+  const [adjustment, setAdjustment] = useState("Standard");
 
   // --- Función para buscar swing por valor ---
   const searchSwing = (value) => {
@@ -288,22 +288,22 @@ export default function SwingweightCalculator() {
           {/* Columna medio - resultados */}
           <div style={styles.midCol}>
             <div>
-              <span>{results.result_shaft}</span>
+              <span>{results.result_shaft > 0 ? `+${results.result_shaft}` : results.result_shaft}</span>
             </div>
             <div>
-              <span>{results.result_head}</span>
+              <span>{results.result_head > 0 ? `+${results.result_head}` : results.result_head}</span>
             </div>
             <div>
-              <span>{results.result_length}</span>
+              <span>{results.result_length > 0 ? `+${results.result_length}` : results.result_length}</span>
             </div>
             <div>
-              <span>{results.result_grip}</span>
+              <span>{results.result_grip > 0 ? `+${results.result_grip}` : results.result_grip}</span>
             </div>
             <div>
-              <span>{results.result_wraps}</span>
+              <span>{results.result_wraps > 0 ? `+${results.result_wraps}` : results.result_wraps}</span>
             </div>
             <div>
-              <span>{results.result_adjustment}</span>
+              <span>{results.result_adjustment > 0 ? `+${results.result_adjustment}` : results.result_adjustment}</span>
             </div>
           </div>
 
