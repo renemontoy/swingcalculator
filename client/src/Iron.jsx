@@ -42,7 +42,7 @@ export default function IronSwing() {
     "Mitsubishi MMT 60 A- Parallel": "C9",
     "Mitsubishi MMT 70 R- Parallel": "C9",
     "Mitsubishi MMT 80 S- Parallel": "C9",
-    "Mitsubishi MMT Taper 105 S - 7ir": "",
+    "Mitsubishi MMT Taper 105 S - 7ir": "D2",
     "Mitsubishi MMT Taper 125 X - 7ir": "D2",
     "Nippon Modus Pro 105 R- 7": "D1",
     "Nippon-NSPro-950GH-R-7ir": "D0",
