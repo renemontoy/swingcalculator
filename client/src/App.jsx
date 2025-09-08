@@ -7,6 +7,7 @@ import SecretSwing from "./Secretweapon";
 import FairwaySwing from "./Fairway";
 import HybridSwing from "./Hybrid";
 import NavBar from "./navigation";
+import IronSwingG8 from "./IronG8";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="secretweapon" element={<SecretSwing />} />
           <Route path="fairway" element={<FairwaySwing />} />
           <Route path="hybrid" element={<HybridSwing />} />
+          <Route path="1876testingG8" element={<IronSwingG8 />} />
         </Route>
       </Routes>
     </BrowserRouter>
