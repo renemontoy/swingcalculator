@@ -24,7 +24,7 @@ function App() {
           <Route path="secretweapon" element={<SecretSwing />} />
           <Route path="fairway" element={<FairwaySwing />} />
           <Route path="hybrid" element={<HybridSwing />} />
-          <Route path="1876testingG8" element={<IronSwingG8 />} />
+          <Route path="1TES8T7IN68" element={<IronSwingG8 />} />
         </Route>
       </Routes>
     </BrowserRouter>
