@@ -65,8 +65,8 @@ export default function IronSwingG8() {
 
   const headList = {
     "Gen 8 0311 XP - 7 Iron": 0,
-    "0311 P - 7 Iron": 0,
-    "0317 T - 7 Iron": 0,
+    "Gen 8 0311 P - 7 Iron": 0,
+    "Gen 8 0317 T - 7 Iron": 0,
   };
 
   const lengthList = {
@@ -410,7 +410,7 @@ export default function IronSwingG8() {
               ))}
             </select>
 
-            <label>Toe</label>
+            <label>Toe Weight</label>
             <select style={styles.selectcontainer} value={toe} onChange={(e) => setToe(e.target.value)}>
               {toeList.map((item) => (
                 <option key={item} value={item}>
@@ -419,7 +419,7 @@ export default function IronSwingG8() {
               ))}
             </select>
 
-            <label>Heel</label>
+            <label>Heel Weight</label>
             <select style={styles.selectcontainer} value={heel} onChange={(e) => setHeel(e.target.value)}>
               {heelList.map((item) => (
                 <option key={item} value={item}>

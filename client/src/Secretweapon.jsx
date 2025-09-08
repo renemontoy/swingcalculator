@@ -401,28 +401,28 @@ export default function SecretSwing() {
               ))}
             </select>
 
-            <label>Toe</label>
+            <label>Toe Weight</label>
             <select style={styles.selectcontainer} value={toe} onChange={(e) => setToe(e.target.value)}>
               {Object.keys(getToeOptions()).map((item) => (
                 <option key={item}>{item}</option>
               ))}
             </select>
             
-            <label>Heel</label>
+            <label>Heel Weight</label>
             <select style={styles.selectcontainer} value={heel} onChange={(e) => setHeel(e.target.value)}>
               {Object.keys(getHeelOptions()).map((item) => (
                 <option key={item}>{item}</option>
               ))}
             </select>
 
-            <label>Back</label>
+            <label>Back Weight</label>
             <select style={styles.selectcontainer} value={back} onChange={(e) => setBack(e.target.value)}>
               {Object.keys(getBackOptions()).map((item) => (
                 <option key={item}>{item}</option>
               ))}
             </select>
 
-            <label>Front</label>
+            <label>Front Weight</label>
             <select style={styles.selectcontainer} value={front} onChange={(e) => setFront(e.target.value)}>
               {Object.keys(getFrontOptions()).map((item) => (
                 <option key={item}>{item}</option>

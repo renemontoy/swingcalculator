@@ -449,7 +449,7 @@ export default function UltraliteSwing() {
               ))}
             </select>
 
-            <label>Back</label>
+            <label>Back Weight</label>
             <select style={styles.selectcontainer} value={back} onChange={(e) => setBack(e.target.value)}>
               {Object.keys(getBackOptions()).map((item) => (
                 <option key={item}>{item}</option>
