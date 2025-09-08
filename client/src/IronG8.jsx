@@ -315,8 +315,8 @@ export default function IronSwingG8() {
   const [length, setLength] = useState("Standard");
   const [grip, setGrip] = useState("PXG Z5 Standard");
   const [wrap, setWrap] = useState("Standard");
-  const [toe, setToe] = useState("2");
-  const [heel, setHeel] = useState("2");
+  const [toe, setToe] = useState("5");
+  const [heel, setHeel] = useState("5");
 
 
   const [adjustment, setAdjustment] = useState("22");
