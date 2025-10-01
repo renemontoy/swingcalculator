@@ -30,7 +30,7 @@ export default function IronSwing() {
     "KBS Max Graphite 55 A- Parallel": "C8",
     "KBS Max Graphite 65 R- Parallel": "C8",
     "KBS-S-Taper-Lite-R-Parallel": "C9",
-    "KBS-STaperLite-115-S-7ir": "C9",
+    "KBS-STaperLite-100-S-7ir": "C9",
     "KBS-CTaper-120-S-7ir": "D2",
     "KBS-CTaper-130-X-7ir": "D3",
     "KBS-TGIGraphite-70-R-Iron": "C9",
