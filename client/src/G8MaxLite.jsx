@@ -1,6 +1,6 @@
 import { useState, useMemo } from "react";
 
-export default function UltraliteSwing() {
+export default function MaxLiteG8() {
   const shaftList = {
     "Fujikura Pro Blue 50 - R": "C6",
     "Fujikura Pro Blue 50 - R2": "C6",
@@ -81,10 +81,7 @@ export default function UltraliteSwing() {
 
 
   const headList = {
-    //"Black Ops Driver":0,
-    "Ultra Lite Driver": 0,
-    //"Gen 6 Driver": 0,
-    //"Gen 5 Driver": 0,
+    "Lightning Max Lite": 0,
   };
 
   const lengthList = {
@@ -165,38 +162,8 @@ export default function UltraliteSwing() {
   };
 
   const toeOptions = {
-    "Black Ops Driver": {
-      "2.5g": 0,
-      "5g": 1,
-      "7.5g": 2.5,
-      "10g": 4,
-      "12.5g": 5.5,
-      "15g": 7,
-      "17.5g": 8.5,
-      "20g": 10
-    },
-    "Ultra Lite Driver": {
+    "Lightning Max Lite": {
       "NA": 0
-    },
-    "Gen 6 Driver": {
-      "2.5g": 0,
-      "5g": 1,
-      "7.5g": 2.5,
-      "10g": 4,
-      "12.5g": 5.5,
-      "15g": 7,
-      "17.5g": 8.5,
-      "20g": 10
-    },
-    "Gen 5 Driver": {
-      "2.5g": 0,
-      "5g": 1,
-      "7.5g": 2.5,
-      "10g": 4,
-      "12.5g": 5.5,
-      "15g": 7,
-      "17.5g": 8.5,
-      "20g": 10
     },
     // Valor por defecto en caso de que no coincida
     "default": {
@@ -205,38 +172,8 @@ export default function UltraliteSwing() {
   };
   
   const HeelOptions = {
-    "Black Ops Driver": {
-      "12.5g": 0,
-      "2.5g": -5.5,
-      "5g" : -4.5,
-      "7.5g": -3,
-      "10g": -1.5,
-      "15g": 1.5,
-      "17.5g": 3,
-      "20g": 4.5
-    },
-    "Ultra Lite Driver": {
+    "Lightning Max Lite": {
       "NA": 0
-    },
-    "Gen 6 Driver": {
-      "7.5g": 0,
-      "2.5": -2.5,
-      "5g": -1.5,
-      "10g": 1.5,
-      "12.5g": 3,
-      "15g": 4.5,
-      "17.5g": 6,
-      "20g": 7.5
-    },
-    "Gen 5 Driver": {
-      "7.5g": 0,
-      "2.5": -2.5,
-      "5g": -1.5,
-      "10g": 1.5,
-      "12.5g": 3,
-      "15g": 4.5,
-      "17.5g": 6,
-      "20g": 7.5
     },
     // Valor por defecto en caso de que no coincida
     "default": {
@@ -245,17 +182,7 @@ export default function UltraliteSwing() {
   };
   
   const BackOptions = {
-    "Black Ops Driver": {
-      "2.5g": 0,
-      "5g": 1,
-      "7.5g": 2.5,
-      "10g": 4,
-      "12.5g": 5.5,
-      "15g": 7,
-      "17.5g": 8.5,
-      "20g": 10
-    },
-    "Ultra Lite Driver": {
+    "Lightning Max Lite": {
       "12.5g": 0,
       "2.5g": -5.5,
       "5g" : -4.5,
@@ -264,26 +191,6 @@ export default function UltraliteSwing() {
       "15g": 1.5,
       "17.5g": 3,
       "20g": 4.5
-    },
-    "Gen 6 Driver": {
-      "7.5g": 0,
-      "2.5": -2.5,
-      "5g": -1.5,
-      "10g": 1.5,
-      "12.5g": 3,
-      "15g": 4.5,
-      "17.5g": 6,
-      "20g": 7.5
-    },
-    "Gen 5 Driver": {
-      "7.5g": 0,
-      "2.5": -2.5,
-      "5g": -1.5,
-      "10g": 1.5,
-      "12.5g": 3,
-      "15g": 4.5,
-      "17.5g": 6,
-      "20g": 7.5
     },
     // Valor por defecto en caso de que no coincida
     "default": {
@@ -321,7 +228,7 @@ export default function UltraliteSwing() {
 
   // --- Estado del formulario ---
   const [shaft, setShaft] = useState("Fujikura Pro Blue 50 - R");
-  const [head, setHead] = useState("Ultra Lite Driver");
+  const [head, setHead] = useState("Lightning Max Lite");
   const [length, setLength] = useState("Standard");
   const [grip, setGrip] = useState("PXG Z5 Standard");
   const [wrap, setWrap] = useState("Standard");
@@ -409,7 +316,7 @@ export default function UltraliteSwing() {
   return (
     <div style={styles.containerWrapper}>
       <div style={styles.container}>
-        <h1 style={styles.title}>Ultra Lite Swingweight Calculator</h1>
+        <h1 style={styles.title}>Lightning Max Lite Swingweight Calculator</h1>
         <p style={styles.subtitle}>All swing weights are an <strong>estimation</strong> which is calculated based on data 
         <br/>that has been gathered over time and will be updated as needed.</p>
         <div style={styles.calculator}>
@@ -483,7 +390,7 @@ export default function UltraliteSwing() {
           {/* Columna derecha - resultados */}
           <div style={styles.rightCol}>
             <div style={styles.resultRow}>
-              <span>Ultra Lite Swing Weight</span>
+              <span>Lightning Max Lite Swing Weight</span>
               <span style={styles.resultBox}>{results.driver}</span>
             </div>
           </div>

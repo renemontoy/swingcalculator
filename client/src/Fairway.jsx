@@ -1,6 +1,6 @@
 import { useState, useMemo } from "react";
 
-export default function FairwaySwing() {
+export default function FairwaySwingG8() {
   const shaftList = {
     "Fujikura Pro Blue 50 - R": "D1",
     "Fujikura Pro Blue 50 - R2": "D1",
@@ -76,13 +76,13 @@ export default function FairwaySwing() {
     "Tour AD XC 5 - S": "D1",
     "Tour AD XC 6- S": "D1",
     "Tour AD XC 6- X": "D2",
-    "Tour AD XC 7-X": "D2"
+    "Tour AD XC 7-X": "D2",
     };
 
 
   const headList = {
-    "Black Ops Fairway Wood":0,
-    "Gen 6 Fairway Wood": 0,
+    "Lightning Fairway":0,
+    "Lightning Tour Fairway": 0,
   };
 
   const lengthList = {
@@ -163,17 +163,7 @@ export default function FairwaySwing() {
   };
 
   const toeOptions = {
-    "Black Ops Fairway Wood": {
-      "2.5g": 0,
-      "5g": 1,
-      "7.5g": 2.5,
-      "10g": 4,
-      "12.5g": 5.5,
-      "15g": 7,
-      "17.5g": 8.5,
-      "20g": 10
-    },
-    "Gen 6 Fairway Wood": {
+    "Lightning Fairway": {
       "2.5g": 0,
       "5g": 1,
       "7.5g": 2.5,
@@ -190,34 +180,7 @@ export default function FairwaySwing() {
   };
   
   const HeelOptions = {
-    "Black Ops Fairway Wood": {
-      "12.5g": 0,
-      "2.5g": -5.5,
-      "5g" : -4.5,
-      "7.5g": -3,
-      "10g": -1.5,
-      "15g": 1.5,
-      "17.5g": 3,
-      "20g": 4.5
-    },
-    "Gen 6 Fairway Wood": {
-      "10g": 0,
-      "2.5": -4,
-      "5g": -3,
-      "7.5g": -1.5,
-      "12.5g": 1.5,
-      "15g": 3,
-      "17.5g": 4.5,
-      "20g": 6
-    },
-    // Valor por defecto en caso de que no coincida
-    "default": {
-      "NA": 0
-    }
-  };
-  
-  const BackOptions = {
-    "Black Ops Fairway Wood": {
+    "Lightning Fairway": {
       "2.5g": 0,
       "5g": 1,
       "7.5g": 2.5,
@@ -227,7 +190,41 @@ export default function FairwaySwing() {
       "17.5g": 8.5,
       "20g": 10
     },
-    "Gen 6 Fairway Wood": {
+    // Valor por defecto en caso de que no coincida
+    "default": {
+      "NA": 0
+    }
+  };
+  
+  const BackOptions = {
+    "Lightning Fairway": {
+      "12.5g": 0,
+      "2.5g": -5.5,
+      "5g": -4.5,
+      "7.5g": -3,
+      "10g": -1.5,
+      "15g": 1.5,
+      "17.5g": 3,
+      "20g": 4.5
+    },
+    "Lightning Tour Fairway": {
+      "2.5": 0,
+      "5g": 1,
+      "7.5g": -2.5,
+      "10g": 4,
+      "12.5g": 5.5,
+      "15g": 7,
+      "17.5g": 8.5,
+      "20g": 10
+    },
+    // Valor por defecto en caso de que no coincida
+    "default": {
+      "NA": 0
+    }
+  };
+  
+  const FrontOptions = {
+    "Lightning Tour Fairway": {
       "10g": 0,
       "2.5": -4,
       "5g": -3,
@@ -279,13 +276,15 @@ export default function FairwaySwing() {
 
   // --- Estado del formulario ---
   const [shaft, setShaft] = useState("Fujikura Pro Blue 50 - R");
-  const [head, setHead] = useState("Black Ops Fairway Wood");
+  const [head, setHead] = useState("Lightning Fairway");
   const [length, setLength] = useState("Standard");
   const [grip, setGrip] = useState("PXG Z5 Standard");
   const [wrap, setWrap] = useState("Standard");
-  const [toe, setToe] = useState(findInitialZeroValue(toeOptions, "Black Ops Fairway Wood"));
-  const [heel, setHeel] = useState(findInitialZeroValue(HeelOptions, "Black Ops Fairway Wood"));
-  const [back, setBack] = useState(findInitialZeroValue(BackOptions, "Black Ops Fairway Wood"));
+  const [toe, setToe] = useState(findInitialZeroValue(toeOptions, "Lightning Fairway"));
+  const [heel, setHeel] = useState(findInitialZeroValue(HeelOptions, "Lightning Fairway"));
+  const [back, setBack] = useState(findInitialZeroValue(BackOptions, "Lightning Fairway"));
+  const [front, setFront] = useState(findInitialZeroValue(FrontOptions, "Lightning Fairway"));
+
 
 
   // -----------TOE----------------
@@ -300,12 +299,17 @@ export default function FairwaySwing() {
     return HeelOptions[head] || HeelOptions["default"];
   };
   
-  // -----------HEEL----------------
+  // -----------BACK----------------
   // Obtener las opciones de toe según la cabeza seleccionada
   const getBackOptions = () => {
     return BackOptions[head] || BackOptions["default"];
   };
 
+  // -----------FRONT----------------
+  // Obtener las opciones de toe según la cabeza seleccionada
+  const getFrontOptions = () => {
+    return FrontOptions[head] || FrontOptions["default"];
+  };
 
   // Actualizar el valor de toe cuando cambie la cabeza
   const handleHeadChange = (e) => {
@@ -322,6 +326,7 @@ export default function FairwaySwing() {
     setToe(findZeroOption(toeOptions));
     setHeel(findZeroOption(HeelOptions));
     setBack(findZeroOption(BackOptions));
+    setFront(findZeroOption(FrontOptions));
   };
 
   // --- Función para buscar swing por valor ---
@@ -339,6 +344,7 @@ export default function FairwaySwing() {
     const toeSwing = getToeOptions()[toe] ?? 0;
     const heelSwing = getHeelOptions()[heel] ?? 0;
     const backSwing = getBackOptions()[back] ?? 0;
+    const frontSwing = getFrontOptions()[front] ?? 0;
 
 
     const baseOperation =
@@ -349,7 +355,8 @@ export default function FairwaySwing() {
       wrapSwing +
       toeSwing +
       heelSwing + 
-      backSwing
+      backSwing +
+      frontSwing
       ;
 
     return {
@@ -361,14 +368,17 @@ export default function FairwaySwing() {
       result_toe: toeSwing,
       result_heel: heelSwing,
       result_back : backSwing,
+      result_front : frontSwing,
       driver: searchSwing(baseOperation),
     };
-  }, [shaft, head, length, grip, wrap, toe, heel, back]);
+  }, [shaft, head, length, grip, wrap, toe, heel, back, front]);
 
   return (
     <div style={styles.containerWrapper}>
       <div style={styles.container}>
         <h1 style={styles.title}>Fairway Swingweight Calculator</h1>
+        <p style={styles.subtitle}>All swing weights are an <strong>estimation</strong> which is calculated based on data 
+        <br/>that has been gathered over time and will be updated as needed.</p>
 
         <div style={styles.calculator}>
           {/* Columna izquierda - formulario */}
@@ -428,6 +438,13 @@ export default function FairwaySwing() {
                 <option key={item}>{item}</option>
               ))}
             </select>
+
+            <label>Front Weight</label>
+            <select style={styles.selectcontainer} value={front} onChange={(e) => setFront(e.target.value)}>
+              {Object.keys(getFrontOptions()).map((item) => (
+                <option key={item}>{item}</option>
+              ))}
+            </select>
           </div>
 
           {/* Columna medio - resultados */}
@@ -456,6 +473,9 @@ export default function FairwaySwing() {
             <div>
               <span>{results.result_back > 0 ? `+${results.result_back}` : results.result_back}</span>
             </div>
+            <div>
+              <span>{results.result_front > 0 ? `+${results.result_front}` : results.result_front}</span>
+            </div>
           </div>
 
           {/* Columna derecha - resultados */}
@@ -478,7 +498,7 @@ const styles = {
         alignItems: "center",     // Centrado vertical (opcional)
         width: "100%",
         minHeight: "100vh",       // Ocupa toda la altura visible
-        marginTop: -54,
+        marginTop: -40,
         boxSizing: "border-box"
     },
     container: { 
@@ -507,7 +527,7 @@ const styles = {
     leftCol: {
       display: "flex",
       flexDirection: "column",
-      gap: "8px",
+      gap: "7px",
       width: "min(30vw, 350px)",
       textAlign: "left",
     },
@@ -522,7 +542,7 @@ const styles = {
       display: "flex", 
       flexDirection: "column",
       marginTop: "1.6vw", 
-      gap: "38.5px",
+      gap: "35px",
       marginRight: "13vw",
       width: "min(30vw, 30px)",
       textAlign: "right",// Centra los elementos hijos horizontalmente
@@ -543,7 +563,7 @@ const styles = {
     },
     selectcontainer :{
       width: "min(30vw, 350px)",
-      fontSize: "clamp(14px, 1.2vw, 17px)"
+      fontSize: "clamp(13px, 1.05vw, 17px)"
     }
 };
 

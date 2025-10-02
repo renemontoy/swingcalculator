@@ -335,6 +335,8 @@ export default function HybridSwing() {
     <div style={styles.containerWrapper}>
       <div style={styles.container}>
         <h1 style={styles.title}>Hybrid Swingweight Calculator</h1>
+        <p style={styles.subtitle}>All swing weights are an <strong>estimation</strong> which is calculated based on data 
+        <br/>that has been gathered over time and will be updated as needed.</p>
 
         <div style={styles.calculator}>
           {/* Columna izquierda - formulario */}

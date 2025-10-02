@@ -369,8 +369,10 @@ export default function IronSwingG8() {
   return (
     <div style={styles.containerWrapper}>
       <div style={styles.container}>
-        <h1 style={styles.title}>Iron G8 Swingweight Calculator</h1>
+        <h1 style={styles.title}>Iron Swingweight Calculator</h1>
         <p style={styles.subtitle}>All swing weights are based off of the 7 iron</p>
+        <p style={styles.subtitle}>All swing weights are an <strong>estimation</strong> which is calculated based on data 
+        <br/>that has been gathered over time and will be updated as needed.</p>
 
         <div style={styles.calculator}>
           {/* Columna izquierda - formulario */}

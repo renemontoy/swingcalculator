@@ -1,90 +1,88 @@
 import { useState, useMemo } from "react";
 
-export default function UltraliteSwing() {
+export default function FairwaySwing() {
   const shaftList = {
-    "Fujikura Pro Blue 50 - R": "C6",
-    "Fujikura Pro Blue 50 - R2": "C6",
-    "Fujikura Pro Blue 60 - R": "C7",
-    "Fujikura Pro Blue 60 - S": "C7",
-    "Fujikura Pro Blue 60 - X": "C7",
-    "Fujikura Pro Blue 70 - S": "C8",
-    "Fujikura Pro Blue 70 - X": "C8",
-    "Fujikura Ventus VeloCore+ Black 6 - S": "C7",
-    "Fujikura Ventus VeloCore+ Black 6 - X": "C7",
-    "Fujikura Ventus VeloCore+ Black 7 - S": "C8",
-    "Fujikura Ventus VeloCore+ Black 7 - X": "C8",
-    "Fujikura Ventus VeloCore+ Blue 5 - R": "C6",
-    "Fujikura Ventus VeloCore+ Blue 5 - S": "C6",
-    "Fujikura Ventus VeloCore+ Blue 6 - S": "C7",
-    "Fujikura Ventus VeloCore+ Blue 6 - X": "C7",
-    "Fujikura Ventus VeloCore+ Blue 7 - S": "C7",
-    "Fujikura Ventus VeloCore+ Blue 7 - X": "C7",
-    "Fujikura Ventus VeloCore+ Red 5 - R": "C6",
-    "Fujikura Ventus VeloCore+ Red 5 - R2": "C7",
-    "Fujikura Ventus VeloCore+ Red 5 - S": "C7",
-    "Fujikura Ventus VeloCore+ Red 6 - S": "C7",
-    "Grand Bassara 29 L": "C3",
-    "MCA Diamana 2023 S+ 60g- R": "C5",
-    "MCA Diamana 2023 S+ 60g- S": "C5",
-    "MCA Diamana 2023 S+ 60g- X": "C6",
-    "MCA Diamana 2023 S+ 70g- S": "C7",
-    "MCA Diamana 2023 S+ 70g- X": "C7",
-    "MCA Tensei AV X-Link Blue 55 R": "C6",
-    "MCA Tensei AV X-Link Blue 65 R": "C6",
-    "MCA Tensei AV X-Link Blue 65 S": "C6",
-    "MCA Tensei AV X-Link Blue 75 S": "C7",
-    "MCA Tensei AV X-Link White 65 S": "C6",
-    "MCA Tensei AV X-Link White 65 X": "C6",
-    "MCA Tensei AV X-Link White 75 S": "C8",
-    "MCA Tensei AV X-Link White 75 X": "C8",
-    "Project X Cypher 2.0 40 4.0": "C6",
-    "Project X Cypher 2.0 40 5.0": "C5",
-    "Project X Cypher 2.0 40 5.5": "C5",
-    "Project X Cypher 2.0 50 5.5": "C6",
-    "Project X Cypher 2.0 50 6.0": "C6",
-    "Project X Denali Blue 50 5.0": "C5",
-    "Project X Denali Blue 50 5.5": "C5",
-    "Project X Denali Blue 50 6.0": "C5",
-    "Project X Denali Blue 60 5.5": "C5",
-    "Project X Denali Blue 60 6.0": "C6",
-    "Project X Denali Blue 60 6.5": "C6",
-    "Project X Denali Blue 70 6.5": "C7",
-    "Project X Denali Red 40 4.0": "C3",
-    "Project X Denali Red 50 5.0": "C4",
-    "Project X Denali Red 50 5.5": "C4",
-    "Project X Denali Red 50 6.0": "C4",
-    "Project X Denali Red 60 5.5": "C5",
-    "Project X Denali Red 60 6.0": "C5",
-    "Project X HZRDUS GEN5 Black 60 6.0": "C7",
-    "Project X HZRDUS GEN5 Black 60 6.5": "C7",
-    "Project X HZRDUS GEN5 Black 70 6.0": "C7",
-    "Project X HZRDUS GEN5 Black 70 6.5": "C8",
-    "Project X HZRDUS GEN5 Black 80 6.5": "C9",
-    "Tour AD HD 4- R2": "C5",
-    "Tour AD HD 5- R": "C6",
-    "Tour AD HD 5- S": "C7",
-    "Tour AD IZ 5- R": "C6",
-    "Tour AD IZ 5- R2": "C6",
-    "Tour AD VF 5 - S": "C6",
-    "Tour AD VF 5 - X": "C6",
-    "Tour AD VF 6 - S": "C7",
-    "Tour AD VF 6 - X": "C7",
-    "Tour AD VF 7 - S": "C8",
-    "Tour AD VF 7 - X": "C8",
-    "Tour AD XC 4 - R2": "C4",
-    "Tour AD XC 5 - R": "C6",
-    "Tour AD XC 5 - S": "C7",
-    "Tour AD XC 6- S": "C7",
-    "Tour AD XC 6- X": "C7",
-    "Tour AD XC 7-X": "C8"
+    "Fujikura Pro Blue 50 - R": "D1",
+    "Fujikura Pro Blue 50 - R2": "D1",
+    "Fujikura Pro Blue 60 - R": "D1",
+    "Fujikura Pro Blue 60 - S": "D1",
+    "Fujikura Pro Blue 60 - X": "D1",
+    "Fujikura Pro Blue 70 - S": "D2",
+    "Fujikura Pro Blue 70 - X": "D2",
+    "Fujikura Ventus VeloCore+ Black 6 - S": "D0",
+    "Fujikura Ventus VeloCore+ Black 6 - X": "D0",
+    "Fujikura Ventus VeloCore+ Black 7 - S": "D2",
+    "Fujikura Ventus VeloCore+ Black 7 - X": "D2",
+    "Fujikura Ventus VeloCore+ Blue 5 - R": "D0",
+    "Fujikura Ventus VeloCore+ Blue 5 - S": "D0",
+    "Fujikura Ventus VeloCore+ Blue 6 - S": "D1",
+    "Fujikura Ventus VeloCore+ Blue 6 - X": "D1",
+    "Fujikura Ventus VeloCore+ Blue 7 - S": "D1",
+    "Fujikura Ventus VeloCore+ Blue 7 - X": "D0",
+    "Fujikura Ventus VeloCore+ Red 5 - R": "C9",
+    "Fujikura Ventus VeloCore+ Red 5 - R2": "D0",
+    "Fujikura Ventus VeloCore+ Red 5 - S": "D1",
+    "Fujikura Ventus VeloCore+ Red 6 - S": "D1",
+    "Grand Bassara 29 L": "C9",
+    "MCA Diamana 2023 S+ 60g- R": "D0",
+    "MCA Diamana 2023 S+ 60g- S": "D0",
+    "MCA Diamana 2023 S+ 60g- X": "D0",
+    "MCA Diamana 2023 S+ 70g- S": "D2",
+    "MCA Diamana 2023 S+ 70g- X": "D2",
+    "MCA Tensei AV X-Link Blue 55 R": "D0",
+    "MCA Tensei AV X-Link Blue 65 R": "D1",
+    "MCA Tensei AV X-Link Blue 65 S": "D1",
+    "MCA Tensei AV X-Link Blue 75 S": "D2",
+    "MCA Tensei AV X-Link White 65 S": "D1",
+    "MCA Tensei AV X-Link White 65 X": "D1",
+    "MCA Tensei AV X-Link White 75 S": "D3",
+    "MCA Tensei AV X-Link White 75 X": "D3",
+    "Project X Cypher 2.0 40 4.0": "D0",
+    "Project X Cypher 2.0 40 5.0": "C9",
+    "Project X Cypher 2.0 40 5.5": "D0",
+    "Project X Cypher 2.0 50 5.5": "D0",
+    "Project X Cypher 2.0 50 6.0": "D1",
+    "Project X Denali Blue 50 5.0": "D0",
+    "Project X Denali Blue 50 5.5": "D0",
+    "Project X Denali Blue 50 6.0": "D0",
+    "Project X Denali Blue 60 5.5": "D1",
+    "Project X Denali Blue 60 6.0": "D1",
+    "Project X Denali Blue 60 6.5": "D1",
+    "Project X Denali Blue 70 6.5": "D1",
+    "Project X Denali Red 40 4.0": "C8",
+    "Project X Denali Red 50 5.0": "C9",
+    "Project X Denali Red 50 5.5": "C9",
+    "Project X Denali Red 50 6.0": "C9",
+    "Project X Denali Red 60 5.5": "D0",
+    "Project X Denali Red 60 6.0": "D0",
+    "Project X HZRDUS GEN5 Black 60 6.0": "D1",
+    "Project X HZRDUS GEN5 Black 60 6.5": "D1",
+    "Project X HZRDUS GEN5 Black 70 6.0": "D1",
+    "Project X HZRDUS GEN5 Black 70 6.5": "D3",
+    "Project X HZRDUS GEN5 Black 80 6.5": "D4",
+    "Tour AD HD 4- R2": "D0",
+    "Tour AD HD 5- R": "D1",
+    "Tour AD HD 5- S": "D1",
+    "Tour AD IZ 5- R": "D1",
+    "Tour AD IZ 5- R2": "D0",
+    "Tour AD VF 5 - S": "D0",
+    "Tour AD VF 5 - X": "D0",
+    "Tour AD VF 6 - S": "D1",
+    "Tour AD VF 6 - X": "D1",
+    "Tour AD VF 7 - S": "D2",
+    "Tour AD VF 7 - X": "D2",
+    "Tour AD XC 4 - R2": "C9",
+    "Tour AD XC 5 - R": "D1",
+    "Tour AD XC 5 - S": "D1",
+    "Tour AD XC 6- S": "D1",
+    "Tour AD XC 6- X": "D2",
+    "Tour AD XC 7-X": "D2"
     };
 
 
   const headList = {
-    //"Black Ops Driver":0,
-    "Ultra Lite Driver": 0,
-    //"Gen 6 Driver": 0,
-    //"Gen 5 Driver": 0,
+    "Black Ops Fairway Wood":0,
+    "Gen 6 Fairway Wood": 0,
   };
 
   const lengthList = {
@@ -165,7 +163,7 @@ export default function UltraliteSwing() {
   };
 
   const toeOptions = {
-    "Black Ops Driver": {
+    "Black Ops Fairway Wood": {
       "2.5g": 0,
       "5g": 1,
       "7.5g": 2.5,
@@ -175,20 +173,7 @@ export default function UltraliteSwing() {
       "17.5g": 8.5,
       "20g": 10
     },
-    "Ultra Lite Driver": {
-      "NA": 0
-    },
-    "Gen 6 Driver": {
-      "2.5g": 0,
-      "5g": 1,
-      "7.5g": 2.5,
-      "10g": 4,
-      "12.5g": 5.5,
-      "15g": 7,
-      "17.5g": 8.5,
-      "20g": 10
-    },
-    "Gen 5 Driver": {
+    "Gen 6 Fairway Wood": {
       "2.5g": 0,
       "5g": 1,
       "7.5g": 2.5,
@@ -205,7 +190,7 @@ export default function UltraliteSwing() {
   };
   
   const HeelOptions = {
-    "Black Ops Driver": {
+    "Black Ops Fairway Wood": {
       "12.5g": 0,
       "2.5g": -5.5,
       "5g" : -4.5,
@@ -215,28 +200,15 @@ export default function UltraliteSwing() {
       "17.5g": 3,
       "20g": 4.5
     },
-    "Ultra Lite Driver": {
-      "NA": 0
-    },
-    "Gen 6 Driver": {
-      "7.5g": 0,
-      "2.5": -2.5,
-      "5g": -1.5,
-      "10g": 1.5,
-      "12.5g": 3,
-      "15g": 4.5,
-      "17.5g": 6,
-      "20g": 7.5
-    },
-    "Gen 5 Driver": {
-      "7.5g": 0,
-      "2.5": -2.5,
-      "5g": -1.5,
-      "10g": 1.5,
-      "12.5g": 3,
-      "15g": 4.5,
-      "17.5g": 6,
-      "20g": 7.5
+    "Gen 6 Fairway Wood": {
+      "10g": 0,
+      "2.5": -4,
+      "5g": -3,
+      "7.5g": -1.5,
+      "12.5g": 1.5,
+      "15g": 3,
+      "17.5g": 4.5,
+      "20g": 6
     },
     // Valor por defecto en caso de que no coincida
     "default": {
@@ -245,7 +217,7 @@ export default function UltraliteSwing() {
   };
   
   const BackOptions = {
-    "Black Ops Driver": {
+    "Black Ops Fairway Wood": {
       "2.5g": 0,
       "5g": 1,
       "7.5g": 2.5,
@@ -255,35 +227,15 @@ export default function UltraliteSwing() {
       "17.5g": 8.5,
       "20g": 10
     },
-    "Ultra Lite Driver": {
-      "12.5g": 0,
-      "2.5g": -5.5,
-      "5g" : -4.5,
-      "7.5g": -3,
-      "10g": -1.5,
-      "15g": 1.5,
-      "17.5g": 3,
-      "20g": 4.5
-    },
-    "Gen 6 Driver": {
-      "7.5g": 0,
-      "2.5": -2.5,
-      "5g": -1.5,
-      "10g": 1.5,
-      "12.5g": 3,
-      "15g": 4.5,
-      "17.5g": 6,
-      "20g": 7.5
-    },
-    "Gen 5 Driver": {
-      "7.5g": 0,
-      "2.5": -2.5,
-      "5g": -1.5,
-      "10g": 1.5,
-      "12.5g": 3,
-      "15g": 4.5,
-      "17.5g": 6,
-      "20g": 7.5
+    "Gen 6 Fairway Wood": {
+      "10g": 0,
+      "2.5": -4,
+      "5g": -3,
+      "7.5g": -1.5,
+      "12.5g": 1.5,
+      "15g": 3,
+      "17.5g": 4.5,
+      "20g": 6
     },
     // Valor por defecto en caso de que no coincida
     "default": {
@@ -318,16 +270,23 @@ export default function UltraliteSwing() {
     "F5": 56, "F5.5": 56.5, "F6": 57, "F6.5": 57.5, "F7": 58,
     "F7.5": 58.5, "F8": 59, "F8.5": 59.5, "F9": 60, "F9.5": 60.5
   };
+  
+  const findInitialZeroValue = (options, head) => {
+  const headOptions = options[head] || options["default"];
+  const zeroOption = Object.entries(headOptions).find(([key, value]) => value === 0);
+  return zeroOption ? zeroOption[0] : Object.keys(headOptions)[0];
+};
 
   // --- Estado del formulario ---
   const [shaft, setShaft] = useState("Fujikura Pro Blue 50 - R");
-  const [head, setHead] = useState("Ultra Lite Driver");
+  const [head, setHead] = useState("Black Ops Fairway Wood");
   const [length, setLength] = useState("Standard");
   const [grip, setGrip] = useState("PXG Z5 Standard");
   const [wrap, setWrap] = useState("Standard");
-  const [toe, setToe] = useState("NA");
-  const [heel, setHeel] = useState("NA");
-  const [back, setBack] = useState("NA");
+  const [toe, setToe] = useState(findInitialZeroValue(toeOptions, "Black Ops Fairway Wood"));
+  const [heel, setHeel] = useState(findInitialZeroValue(HeelOptions, "Black Ops Fairway Wood"));
+  const [back, setBack] = useState(findInitialZeroValue(BackOptions, "Black Ops Fairway Wood"));
+
 
   // -----------TOE----------------
   // Obtener las opciones de toe según la cabeza seleccionada
@@ -353,16 +312,16 @@ export default function UltraliteSwing() {
     const newHead = e.target.value;
     setHead(newHead);
     
-    // Resetear toe a la primera opción disponible para la nueva cabeza
-    const newToeOptions = getToeOptions();
-    const newHeelOptions = getHeelOptions();
-    const newBackOptions = getBackOptions();
-    const firstToeOption = Object.keys(newToeOptions)[0];
-    const firstHeelOption = Object.keys(newHeelOptions)[0];
-    const firstBackOption = Object.keys(newBackOptions)[0];
-    setToe(firstToeOption);
-    setHeel(firstHeelOption);
-    setBack(firstBackOption);
+    // Función para encontrar la opción con valor 0
+    const findZeroOption = (options) => {
+        const headOptions = options[newHead] || options["default"];
+        const zeroOption = Object.entries(headOptions).find(([key, value]) => value === 0);
+        return zeroOption ? zeroOption[0] : Object.keys(headOptions)[0];
+    };
+    
+    setToe(findZeroOption(toeOptions));
+    setHeel(findZeroOption(HeelOptions));
+    setBack(findZeroOption(BackOptions));
   };
 
   // --- Función para buscar swing por valor ---
@@ -409,9 +368,10 @@ export default function UltraliteSwing() {
   return (
     <div style={styles.containerWrapper}>
       <div style={styles.container}>
-        <h1 style={styles.title}>Ultra Lite Swingweight Calculator</h1>
+        <h1 style={styles.title}>Fairway Swingweight Calculator</h1>
         <p style={styles.subtitle}>All swing weights are an <strong>estimation</strong> which is calculated based on data 
         <br/>that has been gathered over time and will be updated as needed.</p>
+
         <div style={styles.calculator}>
           {/* Columna izquierda - formulario */}
           <div style={styles.leftCol}>
@@ -450,6 +410,20 @@ export default function UltraliteSwing() {
               ))}
             </select>
 
+            <label>Toe Weight</label>
+            <select style={styles.selectcontainer} value={toe} onChange={(e) => setToe(e.target.value)}>
+              {Object.keys(getToeOptions()).map((item) => (
+                <option key={item}>{item}</option>
+              ))}
+            </select>
+            
+            <label>Heel Weight</label>
+            <select style={styles.selectcontainer} value={heel} onChange={(e) => setHeel(e.target.value)}>
+              {Object.keys(getHeelOptions()).map((item) => (
+                <option key={item}>{item}</option>
+              ))}
+            </select>
+
             <label>Back Weight</label>
             <select style={styles.selectcontainer} value={back} onChange={(e) => setBack(e.target.value)}>
               {Object.keys(getBackOptions()).map((item) => (
@@ -476,6 +450,12 @@ export default function UltraliteSwing() {
               <span>{results.result_wraps > 0 ? `+${results.result_wraps}` : results.result_wraps}</span>
             </div>
             <div>
+              <span>{results.result_toe > 0 ? `+${results.result_toe}` : results.result_toe}</span>
+            </div>
+            <div>
+              <span>{results.result_heel > 0 ? `+${results.result_heel}` : results.result_heel}</span>
+            </div>
+            <div>
               <span>{results.result_back > 0 ? `+${results.result_back}` : results.result_back}</span>
             </div>
           </div>
@@ -483,7 +463,7 @@ export default function UltraliteSwing() {
           {/* Columna derecha - resultados */}
           <div style={styles.rightCol}>
             <div style={styles.resultRow}>
-              <span>Ultra Lite Swing Weight</span>
+              <span>Fairway Swing Weight</span>
               <span style={styles.resultBox}>{results.driver}</span>
             </div>
           </div>
