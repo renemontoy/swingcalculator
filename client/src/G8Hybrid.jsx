@@ -112,19 +112,19 @@ export default function HybridSwingG8() {
     "Standard": 0,
     "1": 0,
     "2": -0.5,
-    "3": -1,
-    "+1 Bottom Hand": 0,
-    "+2 Bottom Hand": 0,
-    "+3 Bottom Hand": -0.5,
-    "+1 Top Hand": 0,
-    "+2 Top Hand": 0,
-    "+3 Top Hand": -0.5,
-    "+2 Bottom Hand, +1 Top Hand": -0.5,
-    "+3 Bottom Hand, +1 Top Hand": -1,
-    "+3 Bottom Hand, +2 Top Hand": -1,
-    "+2 Top Hand, +1 Bottom Hand": -0.5,
-    "+3 Top Hand, +1 Bottom Hand": -1,
-    "+3 Top Hand, +2 Bottom Hand": -1
+    "3": -1
+    //"+1 Bottom Hand": 0,
+    //"+2 Bottom Hand": 0,
+    //"+3 Bottom Hand": -0.5,
+    //"+1 Top Hand": 0,
+    //"+2 Top Hand": 0,
+    //"+3 Top Hand": -0.5,
+    //"+2 Bottom Hand, +1 Top Hand": -0.5,
+    //"+3 Bottom Hand, +1 Top Hand": -1,
+    //"+3 Bottom Hand, +2 Top Hand": -1,
+    //"+2 Top Hand, +1 Bottom Hand": -0.5,
+    //"+3 Top Hand, +1 Bottom Hand": -1,
+    //"+3 Top Hand, +2 Bottom Hand": -1
   };
 
   const toeOptions = {
