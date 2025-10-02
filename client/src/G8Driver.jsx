@@ -398,7 +398,7 @@ export default function DriverSwingG8() {
   return (
     <div style={styles.containerWrapper}>
       <div style={styles.container}>
-        <h1 style={styles.title}>Driver Swingweight Calculator</h1>
+        <h1 style={styles.title}>Lightning Driver Swingweight Calculator</h1>
         <p style={styles.subtitle}>All swing weights are an <strong>estimation</strong> which is calculated based on data 
         <br/>that has been gathered over time and will be updated as needed.</p>
 
@@ -493,7 +493,7 @@ export default function DriverSwingG8() {
           {/* Columna derecha - resultados */}
           <div style={styles.rightCol}>
             <div style={styles.resultRow}>
-              <span>Driver Swing Weight</span>
+              <span>Lightning Driver Swing Weight</span>
               <span style={styles.resultBox}>{results.driver}</span>
             </div>
           </div>

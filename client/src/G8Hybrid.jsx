@@ -303,7 +303,7 @@ export default function HybridSwingG8() {
   return (
     <div style={styles.containerWrapper}>
       <div style={styles.container}>
-        <h1 style={styles.title}>Hybrid Swingweight Calculator</h1>
+        <h1 style={styles.title}>Lightning Hybrid Swingweight Calculator</h1>
         <p style={styles.subtitle}>All swing weights are an <strong>estimation</strong> which is calculated based on data 
         <br/>that has been gathered over time and will be updated as needed.</p>
 
@@ -398,7 +398,7 @@ export default function HybridSwingG8() {
           {/* Columna derecha - resultados */}
           <div style={styles.rightCol}>
             <div style={styles.resultRow}>
-              <span>Hybrid Swing Weight</span>
+              <span>Lightning Hybrid Swing Weight</span>
               <span style={styles.resultBox}>{results.driver}</span>
             </div>
           </div>

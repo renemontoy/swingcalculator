@@ -10,7 +10,7 @@ import NavBarGen8 from "./navG8";
 import IronSwingG8 from "./IronG8";
 import DriverSwingG8 from "./G8Driver";
 import MaxLiteG8 from "./G8MaxLite";
-import FairwaySwingG8 from "./Fairway";
+import FairwaySwingG8 from "./G8Fairway";
 import HybridSwingG8 from "./G8Hybrid";
 
 function App() {
