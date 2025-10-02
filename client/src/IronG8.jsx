@@ -489,7 +489,7 @@ const styles = {
         alignItems: "center",     // Centrado vertical (opcional)
         width: "100%",
         minHeight: "100vh",       // Ocupa toda la altura visible
-        marginTop: -54,
+        marginTop: -40,
         boxSizing: "border-box"
     },
     container: { 
@@ -498,14 +498,16 @@ const styles = {
       padding: "2.5vw", // Usa % del ancho de la ventana (viewport width)
       maxWidth: "1200px", // Límite máximo para pantallas muy grandes
       margin: "0 auto",
-      fontSize: "clamp(10px, 1.2vw, 18px)", // Escala entre 14px y 18px según el ancho
+      fontSize: "clamp(10px, 1.1vw, 18px)", // Escala entre 14px y 18px según el ancho
     },
-    title: {     
-      fontSize: "clamp(20px, 1.5vw, 32px)", // Escala de 24px a 32px
+    title: { 
+      marginTop: "30px", 
+      marginBottom: "-8px",   
+      fontSize: "clamp(20px, 1.5vw, 30px)", // Escala de 24px a 32px
       fontWeight: "bold", 
     },
     subtitle: { 
-      fontSize: "clamp(12px, 1.5vw, 24px)", 
+      fontSize: "clamp(10px, 1.15vw, 25px)", 
       color: "#555", 
      },
     calculator: {
@@ -518,22 +520,22 @@ const styles = {
     leftCol: {
       display: "flex",
       flexDirection: "column",
-      gap: "8px",
+      gap: "7px",
       width: "min(30vw, 350px)",
       textAlign: "left",
     },
     rightCol: { 
       display: "flex", 
       flexDirection: "column",
-      gap: "30px",
+      gap: "19px",
       width: "min(30vw, 300px)",
       alignItems: "center", // Centra los elementos hijos horizontalmente
     },
     midCol: { 
       display: "flex", 
       flexDirection: "column",
-      marginTop: "28px", 
-      gap: "38px",
+      marginTop: "1.6vw", 
+      gap: "35px",
       marginRight: "13vw",
       width: "min(30vw, 30px)",
       textAlign: "right",// Centra los elementos hijos horizontalmente
@@ -543,7 +545,7 @@ const styles = {
       justifyContent: "space-between",
       border: "1px solid #aaaaaaff",
       background: "#e0e0e0",
-      padding: "14px",
+      padding: "16px",
       width: "min(30vw, 450px)"
     },
     resultBox: {
@@ -554,7 +556,6 @@ const styles = {
     },
     selectcontainer :{
       width: "min(30vw, 350px)",
-      fontSize: "clamp(14px, 1.2vw, 17px)"
+      fontSize: "clamp(13px, 1.05vw, 17px)"
     }
 };
-

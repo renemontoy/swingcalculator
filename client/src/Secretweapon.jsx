@@ -494,12 +494,14 @@ const styles = {
       margin: "0 auto",
       fontSize: "clamp(10px, 1.1vw, 18px)", // Escala entre 14px y 18px según el ancho
     },
-    title: {     
-      fontSize: "clamp(20px, 1.5vw, 32px)", // Escala de 24px a 32px
+    title: { 
+      marginTop: "30px", 
+      marginBottom: "-8px",   
+      fontSize: "clamp(20px, 1.5vw, 30px)", // Escala de 24px a 32px
       fontWeight: "bold", 
     },
     subtitle: { 
-      fontSize: "clamp(12px, 1.5vw, 24px)", 
+      fontSize: "clamp(10px, 1.15vw, 25px)", 
       color: "#555", 
      },
     calculator: {
@@ -551,4 +553,3 @@ const styles = {
       fontSize: "clamp(13px, 1.05vw, 17px)"
     }
 };
-
