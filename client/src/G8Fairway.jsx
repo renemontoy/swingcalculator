@@ -145,9 +145,9 @@ export default function FairwaySwingG8() {
 
   const wrapList = {
     "Standard": 0,
-    "1": 0,
-    "2": -0.5,
-    "3": -1
+    "+1": 0,
+    "+2": -0.5,
+    "+3": -1
     //"+1 Bottom Hand": 0,
     //"+2 Bottom Hand": 0,
     //"+3 Bottom Hand": -0.5,
