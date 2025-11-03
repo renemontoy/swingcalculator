@@ -28,13 +28,11 @@ function App() {
           <Route path="secretweapon" element={<SecretSwing />} />
           <Route path="fairway" element={<FairwaySwing />} />
           <Route path="hybrid" element={<HybridSwing />} />
-        </Route>
-          <Route path="gen8/" element={<NavBarGen8 />}>
-          <Route path="iron" element={<IronSwingG8 />} />
-          <Route path="driver" element={<DriverSwingG8 />} />
-          <Route path="maxlite" element={<MaxLiteG8 />} />
-          <Route path="fairway" element={<FairwaySwingG8 />} />
-          <Route path="hybrid" element={<HybridSwingG8 />} />
+          <Route path="gen8/iron" element={<IronSwingG8 />} />
+          <Route path="lightning/driver" element={<DriverSwingG8 />} />
+          <Route path="lightning/maxlite" element={<MaxLiteG8 />} />
+          <Route path="lightning/fairway" element={<FairwaySwingG8 />} />
+          <Route path="lightning/hybrid" element={<HybridSwingG8 />} />
         </Route>
       </Routes>
     </BrowserRouter>
