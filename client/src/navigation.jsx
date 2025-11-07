@@ -9,10 +9,12 @@ const NavBar = () => {
     gen7: false,
     gen8: false,
     lightning: false,
+    calc: false,
   });
 
   // Refs para detectar clics fuera
   const gen7Ref = useRef(null);
+  const calcRef = useRef(null);
   const gen8Ref = useRef(null);
   const lightningRef = useRef(null);
 
@@ -20,6 +22,8 @@ const NavBar = () => {
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
+        calcRef.current &&
+        !calcRef.current.contains(event.target) &&
         gen7Ref.current &&
         !gen7Ref.current.contains(event.target) &&
         gen8Ref.current &&
@@ -27,7 +31,7 @@ const NavBar = () => {
         lightningRef.current &&
         !lightningRef.current.contains(event.target)
       ) {
-        setOpenDropdowns({ gen7: false, gen8: false, lightning: false });
+        setOpenDropdowns({ gen7: false, calc: false, gen8: false, lightning: false });
       }
     };
     document.addEventListener('mousedown', handleClickOutside);
@@ -38,6 +42,7 @@ const NavBar = () => {
   const toggleDropdown = (menu) => {
     setOpenDropdowns((prev) => ({
       gen7: false,
+      calc: false,
       gen8: false,
       lightning: false,
       [menu]: !prev[menu],
@@ -49,7 +54,19 @@ const NavBar = () => {
       <nav className="navbar">
         <div className="navbar-container">
           <div className="navbar-brand">
-            <h2>SwingWeight PXG</h2>
+            <div className="navbar-dropdown" ref={calcRef}>
+              <button
+                className="navbar-link dropdown-button"
+                onClick={() => toggleDropdown('calc')}
+              >
+                <h2>SwingWeight PXG ▾</h2>
+              </button>
+              {openDropdowns.calc && (
+                <div className="dropdown-menu">
+                  <Link to="length/putter" className="dropdown-item" onClick={() => toggleDropdown('calc')}>Length Restrictions PXG</Link>
+                </div>
+              )}
+              </div>
           </div>
 
           {/* ===== Menús principales ===== */}

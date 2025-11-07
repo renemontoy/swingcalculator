@@ -6,12 +6,18 @@ import SecretSwing from "./Secretweapon";
 import FairwaySwing from "./Fairway";
 import HybridSwing from "./Hybrid";
 import NavBar from "./navigation";
-import NavBarGen8 from "./navG8";
 import IronSwingG8 from "./IronG8";
 import DriverSwingG8 from "./G8Driver";
 import MaxLiteG8 from "./G8MaxLite";
 import FairwaySwingG8 from "./G8Fairway";
 import HybridSwingG8 from "./G8Hybrid";
+import PutterLength from "./SwingLenght/LenghtPutter";
+import NavBarLength from "./navlength";
+import DriverLength from "./SwingLenght/LenghtDriver";
+import SecretWeaponLength from "./SwingLenght/LengthSecretWeapon";
+import FairwayLength from "./SwingLenght/LengthFairway";
+import HybridLength from "./SwingLenght/LenghtHybrid";
+import IronLength from "./SwingLenght/LenghtIrons";
 
 function App() {
   return (
@@ -33,7 +39,16 @@ function App() {
           <Route path="lightning/maxlite" element={<MaxLiteG8 />} />
           <Route path="lightning/fairway" element={<FairwaySwingG8 />} />
           <Route path="lightning/hybrid" element={<HybridSwingG8 />} />
-        </Route>
+          </Route>
+          <Route path="length/" element={<NavBarLength />}>
+          <Route path="putter" element={<PutterLength />} />
+          <Route path="driver" element={<DriverLength />} />
+          <Route path="secretweapon" element={<SecretWeaponLength />} />
+          <Route path="fairway" element={<FairwayLength />} />
+          <Route path="hybrid" element={<HybridLength />} />
+          <Route path="iron" element={<IronLength />} />
+
+           </Route>
       </Routes>
     </BrowserRouter>
   );
