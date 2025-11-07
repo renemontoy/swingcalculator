@@ -40,7 +40,8 @@ function App() {
           <Route path="lightning/fairway" element={<FairwaySwingG8 />} />
           <Route path="lightning/hybrid" element={<HybridSwingG8 />} />
           </Route>
-          <Route path="length/" element={<NavBarLength />}>
+          <Route path="length" element={<NavBarLength />}>
+          <Route index element={<Navigate to="putter" replace />} />
           <Route path="putter" element={<PutterLength />} />
           <Route path="driver" element={<DriverLength />} />
           <Route path="secretweapon" element={<SecretWeaponLength />} />
