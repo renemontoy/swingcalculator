@@ -55,57 +55,12 @@ const NavBar = () => {
         <div className="navbar-container">
           <div className="navbar-brand">
             <div className="navbar-dropdown" ref={calcRef}>
-              <button
-                className="navbar-link dropdown-button"
-                onClick={() => toggleDropdown('calc')}
-              >
-                <h2>SwingWeight PXG ▾</h2>
-              </button>
-              {openDropdowns.calc && (
-                <div className="dropdown-menu">
-                  <Link to="length/putter" className="dropdown-item" onClick={() => toggleDropdown('calc')}>Length Restrictions PXG</Link>
-                </div>
-              )}
+                <h2>SwingWeight PXG</h2>
               </div>
           </div>
 
           {/* ===== Menús principales ===== */}
           <div className="navbar-menu-desktop">
-            {/* GEN 7 */}
-            <div className="navbar-dropdown" ref={gen7Ref}>
-              <button
-                className="navbar-link dropdown-button"
-                onClick={() => toggleDropdown('gen7')}
-              >
-                GEN 7 ▾
-              </button>
-              {openDropdowns.gen7 && (
-                <div className="dropdown-menu">
-                  <Link to="/iron" className="dropdown-item" onClick={() => toggleDropdown('gen7')}>Iron</Link>
-                  <Link to="/driver" className="dropdown-item" onClick={() => toggleDropdown('gen7')}>Driver</Link>
-                  <Link to="/ultralite" className="dropdown-item" onClick={() => toggleDropdown('gen7')}>Ultra Lite</Link>
-                  <Link to="/secretweapon" className="dropdown-item" onClick={() => toggleDropdown('gen7')}>Secret Weapon</Link>
-                  <Link to="/fairway" className="dropdown-item" onClick={() => toggleDropdown('gen7')}>Fairway</Link>
-                  <Link to="/hybrid" className="dropdown-item" onClick={() => toggleDropdown('gen7')}>Hybrid</Link>
-                </div>
-              )}
-            </div>
-
-            {/* GEN 8 */}
-            <div className="navbar-dropdown" ref={gen8Ref}>
-              <button
-                className="navbar-link dropdown-button"
-                onClick={() => toggleDropdown('gen8')}
-              >
-                GEN 8 ▾
-              </button>
-              {openDropdowns.gen8 && (
-                <div className="dropdown-menu">
-                  <Link to="/gen8/iron" className="dropdown-item" onClick={() => toggleDropdown('gen8')}>Iron</Link>
-                </div>
-              )}
-            </div>
-
             {/* Lightning */}
             <div className="navbar-dropdown" ref={lightningRef}>
               <button
@@ -123,6 +78,41 @@ const NavBar = () => {
                 </div>
               )}
             </div>
+            {/* GEN 8 */}
+            <div className="navbar-dropdown" ref={gen8Ref}>
+              <button
+                className="navbar-link dropdown-button"
+                onClick={() => toggleDropdown('gen8')}
+              >
+                GEN 8 ▾
+              </button>
+              {openDropdowns.gen8 && (
+                <div className="dropdown-menu">
+                  <Link to="/gen8/iron" className="dropdown-item" onClick={() => toggleDropdown('gen8')}>Iron</Link>
+                </div>
+              )}
+            </div>
+            {/* GEN 7 */}
+            <div className="navbar-dropdown" ref={gen7Ref}>
+              <button
+                className="navbar-link dropdown-button"
+                onClick={() => toggleDropdown('gen7')}
+              >
+                All Other Models ▾
+              </button>
+              {openDropdowns.gen7 && (
+                <div className="dropdown-menu">
+                  <Link to="/iron" className="dropdown-item" onClick={() => toggleDropdown('gen7')}>Iron</Link>
+                  <Link to="/driver" className="dropdown-item" onClick={() => toggleDropdown('gen7')}>Driver</Link>
+                  <Link to="/ultralite" className="dropdown-item" onClick={() => toggleDropdown('gen7')}>Ultra Lite</Link>
+                  <Link to="/secretweapon" className="dropdown-item" onClick={() => toggleDropdown('gen7')}>Secret Weapon</Link>
+                  <Link to="/fairway" className="dropdown-item" onClick={() => toggleDropdown('gen7')}>Fairway</Link>
+                  <Link to="/hybrid" className="dropdown-item" onClick={() => toggleDropdown('gen7')}>Hybrid</Link>
+                </div>
+              )}
+            </div>
+
+
           </div>
         </div>
       </nav>

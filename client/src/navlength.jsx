@@ -54,17 +54,7 @@ const NavBarLength = () => {
         <div className="navbar-container">
           <div className="navbar-brand">
             <div className="navbar-dropdown" ref={calcRef}>
-              <button
-                className="navbar-link dropdown-button"
-                onClick={() => toggleDropdown('calc')}
-              >
-                <h2>Length Restrictions PXG ▾</h2>
-              </button>
-              {openDropdowns.calc && (
-                <div className="dropdown-menu">
-                  <Link to="/iron" className="dropdown-item" onClick={() => toggleDropdown('calc')}>SwingWeight PXG</Link>
-                </div>
-              )}
+                <h2>Length Restrictions PXG</h2>
               </div>
           </div>
 
