@@ -35,6 +35,11 @@ export default function HybridSwing() {
     "Project X Denali Blue Hybrid 80 5.5": "D2",
     "Project X Denali Blue Hybrid 80 6.0": "D2",
     "Project X Denali Blue Hybrid 80 6.5": "D2",
+    "Project X Denali Frost Blue Hybrid 70 5.5": "C8",
+    "Project X Denali Frost Blue Hybrid 70 6.0": "C8",
+    "Project X Denali Frost Blue Hybrid 80 6.5": "C9",
+    "Project X HZRDUS GEN5 Black 90 6.0": "D2",
+    "Project X HZRDUS GEN5 Black 90 6.5": "D2",
     "Tour AD DI Hyb 85- S": "D2",
     "Tour AD DI Hyb 85- X": "D2",
     "Tour AD IZ Hyb 6- R2": "D3",
@@ -72,38 +77,42 @@ export default function HybridSwing() {
   };
 
   const gripList = {
-    "PXG Z5 Undersize": 1,
-    "PXG Z5 Standard": 0,
-    "PXG Z5 Midsize": -2.5,
-    "PXG Z5 Oversize": -5.5,
-    "PXG Z5 Demo": 0,
-    "Golf Pride Tour Velvet 360 Undersize": 0.5,
-    "Golf Pride Tour Velvet 360 Standard": 0,
-    "Golf Pride Tour Velvet 360 Midsize": -1,
-    "Golf Pride Tour Velvet 360 Oversize": -3,
-    "Golf Pride Tour Velvet Womens": 0.5,
-    "Golf Pride Tour Velvet Standard": -0.5,
-    "Golf Pride Tour Velvet Midsize": -1,
+    "PXG Z5 Undersize": 1.3,
+    "PXG Z5 Standard": -0.6,
+    "PXG Z5 Midsize": -2.7,
+    "PXG Z5 Oversize": -5.1,
+    "PXG True Temper Icon Standard (Default)": 0,
+    "PXG True Temper Icon Midsize": -2.4,
+    "PXG True Temper Icon Oversized": -4.4,
+    "PXG True Temper Icon Undersized": 1.3,
+    "Golf Pride Tour Velvet 360 Undersize": 1.3,
+    "Golf Pride Tour Velvet 360 Standard": -0.4,
+    "Golf Pride Tour Velvet 360 Midsize": -1.6,
+    "Golf Pride Tour Velvet 360 Oversize": -3.3,
+    "Golf Pride Tour Velvet Womens": 0.2,
+    "Golf Pride Tour Velvet Standard": 0,
+    "Golf Pride Tour Velvet Midsize": -1.1,
     "Golf Pride Tour Wrap Black Standard": 0,
-    "Golf Pride Tour Wrap Black Midsize": -1,
-    "Golf Pride Tour Wrap White Standard": 0,
-    "Golf Pride Tour Wrap White Midsize": -1,
-    "Golf Pride MCC +4 Standard": -0.5,
+    "Golf Pride Tour Wrap Black Midsize": -1.6,
+    "Golf Pride Tour Wrap White Standard": -0.9,
+    "Golf Pride Tour Wrap White Midsize": -3.1,
+    "Golf Pride MCC +4 Standard": -0.9,
     "Golf Pride MCC +4 Midsize": -4,
-    "Golf Pride MCC +4 Align Standard": -1,
-    "Golf Pride Multi-Compound White Standard": 0.5,
-    "Golf Pride Multi-Compound White Midsize": -2.5,
+    "Golf Pride MCC +4 Align Standard": -0.7,
+    "Golf Pride Multi-Compound White Standard": 0.2,
+    "Golf Pride Multi-Compound White Midsize": -2.2,
     "Golf Pride Z-Cord Standard": 0,
-    "Golf Pride Z-Cord Midsize": -1.5,
+    "Golf Pride Z-Cord Midsize": -1.1,
     "Golf Pride CP2 Pro Standard": 0,
-    "Golf Pride CP2 Pro Midsize": -3,
-    "Golf Pride CP2 Wrap Undersize": 3,
+    "Golf Pride CP2 Pro Midsize": -3.1,
+    "Golf Pride CP2 Wrap Undersize": 1.1,
     "Golf Pride CP2 Wrap Standard": 0,
-    "Golf Pride CP2 Wrap Midsize": -3,
-    "Winn Dri-Tac Ladies": 3,
-    "Winn Dri-Tac Standard": 0.5,
-    "Winn Dri-Tac Midsize": 0,
-    "Winn Dri-Tac Oversize": 0,
+    "Golf Pride CP2 Wrap Midsize": -2.7,
+    "Winn Excel Wrap Oversize": 0.7,
+    "Winn Dri-Tac Ladies": 3.3,
+    "Winn Dri-Tac Standard": 0.4,
+    "Winn Dri-Tac Midsize": 0.4,
+    "Winn Dri-Tac Oversize": 0.4,
     "Winn Wrap Standard": 0,
     "Winn Wrap Midsize": 0,
     "Winn Wrap Oversize": 0
@@ -111,8 +120,8 @@ export default function HybridSwing() {
 
   const wrapList = {
     "Standard": 0,
-    "+1": 0,
-    "+2": -0.5,
+    "+1": -0.3,
+    "+2": -0.7,
     "+3": -1
     //"+1 Bottom Hand": 0,
     //"+2 Bottom Hand": 0,
@@ -131,23 +140,23 @@ export default function HybridSwing() {
   const toeOptions = {
     "Black Ops Hybrid": {
       "2.5g": 0,
-      "5g": 1,
+      "5g": 1.3,
       "7.5g": 2.5,
-      "10g": 4,
-      "12.5g": 5.5,
-      "15g": 7,
-      "17.5g": 8.5,
-      "20g": 10
+      "10g": 3.8,
+      "12.5g": 5.0,
+      "15g": 6.3,
+      "17.5g": 7.5,
+      "20g": 8.8
     },
     "Gen 6 Hybrid": {
       "2.5g": 0,
-      "5g": 1,
+      "5g": 1.3,
       "7.5g": 2.5,
-      "10g": 4,
-      "12.5g": 5.5,
-      "15g": 7,
-      "17.5g": 8.5,
-      "20g": 10
+      "10g": 3.8,
+      "12.5g": 5.0,
+      "15g": 6.3,
+      "17.5g": 7.5,
+      "20g": 8.8
     },
     // Valor por defecto en caso de que no coincida
     "default": {
@@ -158,23 +167,23 @@ export default function HybridSwing() {
   const HeelOptions = {
     "Black Ops Hybrid": {
       "12.5g": 0,
-      "2.5g": -5.5,
-      "5g" : -4.5,
-      "7.5g": -3,
-      "10g": -1.5,
-      "15g": 1.5,
-      "17.5g": 3,
-      "20g": 4.5
+      "2.5g": -5.0,
+      "5g" : -3.8,
+      "7.5g": -2.5,
+      "10g": -1.3,
+      "15g": 1.3,
+      "17.5g": 2.5,
+      "20g": 3.8
     },
     "Gen 6 Hybrid": {
       "10g": 0,
-      "2.5": -4,
-      "5g": -3,
-      "7.5g": -1.5,
-      "12.5g": 1.5,
-      "15g": 3,
-      "17.5g": 4.5,
-      "20g": 6
+      "2.5": -3.8,
+      "5g": -2.5,
+      "7.5g": -1.3,
+      "12.5g": 1.3,
+      "15g": 2.5,
+      "17.5g": 3.8,
+      "20g": 5.0
     },
     // Valor por defecto en caso de que no coincida
     "default": {
@@ -185,23 +194,23 @@ export default function HybridSwing() {
   const BackOptions = {
     "Black Ops Hybrid": {
       "2.5g": 0,
-      "5g": 1,
+      "5g": 1.3,
       "7.5g": 2.5,
-      "10g": 4,
-      "12.5g": 5.5,
-      "15g": 7,
-      "17.5g": 8.5,
-      "20g": 10
+      "10g": 3.8,
+      "12.5g": 5.0,
+      "15g": 6.3,
+      "17.5g": 7.5,
+      "20g": 8.8
     },
     "Gen 6 Hybrid": {
       "10g": 0,
-      "2.5": -4,
-      "5g": -3,
-      "7.5g": -1.5,
-      "12.5g": 1.5,
-      "15g": 3,
-      "17.5g": 4.5,
-      "20g": 6
+      "2.5": -3.8,
+      "5g": -2.5,
+      "7.5g": -1.3,
+      "12.5g": 1.3,
+      "15g": 2.5,
+      "17.5g": 3.8,
+      "20g": 5.0
     },
     // Valor por defecto en caso de que no coincida
     "default": {
@@ -248,7 +257,7 @@ export default function HybridSwing() {
   const [shaft, setShaft] = useState("Accra iSeries 50i");
   const [head, setHead] = useState("Black Ops Hybrid");
   const [length, setLength] = useState("Standard");
-  const [grip, setGrip] = useState("PXG Z5 Standard");
+  const [grip, setGrip] = useState("PXG True Temper Icon Standard (Default)");
   const [wrap, setWrap] = useState("Standard");
   const [toe, setToe] = useState(findInitialZeroValue(toeOptions, "Black Ops Hybrid"));
   const [heel, setHeel] = useState(findInitialZeroValue(HeelOptions, "Black Ops Hybrid"));
@@ -317,6 +326,11 @@ export default function HybridSwing() {
       heelSwing + 
       backSwing
       ;
+    
+    const roundbaseOperation = Math.round(baseOperation * 2) / 2;
+
+    console.log("Base operation", baseOperation);
+    console.log("Round Base operation", roundbaseOperation);
 
     return {
       result_shaft: searchSwing(shaftSwing),
@@ -327,7 +341,7 @@ export default function HybridSwing() {
       result_toe: toeSwing,
       result_heel: heelSwing,
       result_back : backSwing,
-      driver: searchSwing(baseOperation),
+      driver: searchSwing(roundbaseOperation),
     };
   }, [shaft, head, length, grip, wrap, toe, heel, back]);
 

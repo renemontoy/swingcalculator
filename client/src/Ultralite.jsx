@@ -108,38 +108,42 @@ export default function UltraliteSwing() {
   };
 
   const gripList = {
-    "PXG Z5 Undersize": 1,
-    "PXG Z5 Standard": 0,
-    "PXG Z5 Midsize": -2.5,
-    "PXG Z5 Oversize": -5.5,
-    "PXG Z5 Demo": 0,
-    "Golf Pride Tour Velvet 360 Undersize": 0.5,
-    "Golf Pride Tour Velvet 360 Standard": 0,
-    "Golf Pride Tour Velvet 360 Midsize": -1,
-    "Golf Pride Tour Velvet 360 Oversize": -3,
-    "Golf Pride Tour Velvet Womens": 0.5,
-    "Golf Pride Tour Velvet Standard": -0.5,
-    "Golf Pride Tour Velvet Midsize": -1,
+    "PXG Z5 Undersize": 1.3,
+    "PXG Z5 Standard": -0.6,
+    "PXG Z5 Midsize": -2.7,
+    "PXG Z5 Oversize": -5.1,
+    "PXG True Temper Icon Standard (Default)": 0,
+    "PXG True Temper Icon Midsize": -2.4,
+    "PXG True Temper Icon Oversized": -4.4,
+    "PXG True Temper Icon Undersized": 1.3,
+    "Golf Pride Tour Velvet 360 Undersize": 1.3,
+    "Golf Pride Tour Velvet 360 Standard": -0.4,
+    "Golf Pride Tour Velvet 360 Midsize": -1.6,
+    "Golf Pride Tour Velvet 360 Oversize": -3.3,
+    "Golf Pride Tour Velvet Womens": 0.2,
+    "Golf Pride Tour Velvet Standard": 0,
+    "Golf Pride Tour Velvet Midsize": -1.1,
     "Golf Pride Tour Wrap Black Standard": 0,
-    "Golf Pride Tour Wrap Black Midsize": -1,
-    "Golf Pride Tour Wrap White Standard": 0,
-    "Golf Pride Tour Wrap White Midsize": -1,
-    "Golf Pride MCC +4 Standard": -0.5,
+    "Golf Pride Tour Wrap Black Midsize": -1.6,
+    "Golf Pride Tour Wrap White Standard": -0.9,
+    "Golf Pride Tour Wrap White Midsize": -3.1,
+    "Golf Pride MCC +4 Standard": -0.9,
     "Golf Pride MCC +4 Midsize": -4,
-    "Golf Pride MCC +4 Align Standard": -1,
-    "Golf Pride Multi-Compound White Standard": 0.5,
-    "Golf Pride Multi-Compound White Midsize": -2.5,
+    "Golf Pride MCC +4 Align Standard": -0.7,
+    "Golf Pride Multi-Compound White Standard": 0.2,
+    "Golf Pride Multi-Compound White Midsize": -2.2,
     "Golf Pride Z-Cord Standard": 0,
-    "Golf Pride Z-Cord Midsize": -1.5,
+    "Golf Pride Z-Cord Midsize": -1.1,
     "Golf Pride CP2 Pro Standard": 0,
-    "Golf Pride CP2 Pro Midsize": -3,
-    "Golf Pride CP2 Wrap Undersize": 3,
+    "Golf Pride CP2 Pro Midsize": -3.1,
+    "Golf Pride CP2 Wrap Undersize": 1.1,
     "Golf Pride CP2 Wrap Standard": 0,
-    "Golf Pride CP2 Wrap Midsize": -3,
-    "Winn Dri-Tac Ladies": 3,
-    "Winn Dri-Tac Standard": 0.5,
-    "Winn Dri-Tac Midsize": 0,
-    "Winn Dri-Tac Oversize": 0,
+    "Golf Pride CP2 Wrap Midsize": -2.7,
+    "Winn Excel Wrap Oversize": 0.7,
+    "Winn Dri-Tac Ladies": 3.3,
+    "Winn Dri-Tac Standard": 0.4,
+    "Winn Dri-Tac Midsize": 0.4,
+    "Winn Dri-Tac Oversize": 0.4,
     "Winn Wrap Standard": 0,
     "Winn Wrap Midsize": 0,
     "Winn Wrap Oversize": 0
@@ -147,8 +151,8 @@ export default function UltraliteSwing() {
 
   const wrapList = {
     "Standard": 0,
-    "+1": 0,
-    "+2": -0.5,
+    "+1": -0.3,
+    "+2": -0.7,
     "+3": -1
     //"+1 Bottom Hand": 0,
     //"+2 Bottom Hand": 0,
@@ -167,36 +171,36 @@ export default function UltraliteSwing() {
   const toeOptions = {
     "Black Ops Driver": {
       "2.5g": 0,
-      "5g": 1,
-      "7.5g": 2.5,
-      "10g": 4,
-      "12.5g": 5.5,
-      "15g": 7,
-      "17.5g": 8.5,
-      "20g": 10
+      "5g": 1.5,
+      "7.5g": 2.9,
+      "10g": 4.4,
+      "12.5g": 5.9,
+      "15g": 7.4,
+      "17.5g": 8.8,
+      "20g": 10.3
     },
     "Ultra Lite Driver": {
       "NA": 0
     },
     "Gen 6 Driver": {
       "2.5g": 0,
-      "5g": 1,
-      "7.5g": 2.5,
-      "10g": 4,
-      "12.5g": 5.5,
-      "15g": 7,
-      "17.5g": 8.5,
-      "20g": 10
+      "5g": 1.5,
+      "7.5g": 2.9,
+      "10g": 4.4,
+      "12.5g": 5.9,
+      "15g": 7.4,
+      "17.5g": 8.8,
+      "20g": 10.3
     },
     "Gen 5 Driver": {
       "2.5g": 0,
-      "5g": 1,
-      "7.5g": 2.5,
-      "10g": 4,
-      "12.5g": 5.5,
-      "15g": 7,
-      "17.5g": 8.5,
-      "20g": 10
+      "5g": 1.5,
+      "7.5g": 2.9,
+      "10g": 4.4,
+      "12.5g": 5.9,
+      "15g": 7.4,
+      "17.5g": 8.8,
+      "20g": 10.3
     },
     // Valor por defecto en caso de que no coincida
     "default": {
@@ -207,36 +211,36 @@ export default function UltraliteSwing() {
   const HeelOptions = {
     "Black Ops Driver": {
       "12.5g": 0,
-      "2.5g": -5.5,
-      "5g" : -4.5,
-      "7.5g": -3,
+      "2.5g": -5.9,
+      "5g" : -4.4,
+      "7.5g": -2.9,
       "10g": -1.5,
       "15g": 1.5,
-      "17.5g": 3,
-      "20g": 4.5
+      "17.5g": 2.9,
+      "20g": 4.4
     },
     "Ultra Lite Driver": {
       "NA": 0
     },
     "Gen 6 Driver": {
       "7.5g": 0,
-      "2.5": -2.5,
+      "2.5": -2.9,
       "5g": -1.5,
       "10g": 1.5,
-      "12.5g": 3,
-      "15g": 4.5,
-      "17.5g": 6,
-      "20g": 7.5
+      "12.5g": 2.9,
+      "15g": 4.4,
+      "17.5g": 5.9,
+      "20g": 7.4
     },
     "Gen 5 Driver": {
       "7.5g": 0,
-      "2.5": -2.5,
+      "2.5": -2.9,
       "5g": -1.5,
       "10g": 1.5,
-      "12.5g": 3,
-      "15g": 4.5,
-      "17.5g": 6,
-      "20g": 7.5
+      "12.5g": 2.9,
+      "15g": 4.4,
+      "17.5g": 5.9,
+      "20g": 7.4
     },
     // Valor por defecto en caso de que no coincida
     "default": {
@@ -247,43 +251,43 @@ export default function UltraliteSwing() {
   const BackOptions = {
     "Black Ops Driver": {
       "2.5g": 0,
-      "5g": 1,
-      "7.5g": 2.5,
-      "10g": 4,
-      "12.5g": 5.5,
-      "15g": 7,
-      "17.5g": 8.5,
-      "20g": 10
+      "5g": 1.5,
+      "7.5g": 2.9,
+      "10g": 4.4,
+      "12.5g": 5.9,
+      "15g": 7.4,
+      "17.5g": 8.8,
+      "20g": 10.3
     },
     "Ultra Lite Driver": {
       "12.5g": 0,
-      "2.5g": -5.5,
-      "5g" : -4.5,
-      "7.5g": -3,
+      "2.5g": -5.9,
+      "5g" : -4.4,
+      "7.5g": -2.9,
       "10g": -1.5,
       "15g": 1.5,
-      "17.5g": 3,
-      "20g": 4.5
+      "17.5g": 2.9,
+      "20g": 4.4
     },
     "Gen 6 Driver": {
       "7.5g": 0,
-      "2.5": -2.5,
+      "2.5": -2.9,
       "5g": -1.5,
       "10g": 1.5,
-      "12.5g": 3,
-      "15g": 4.5,
-      "17.5g": 6,
-      "20g": 7.5
+      "12.5g": 2.9,
+      "15g": 4.4,
+      "17.5g": 5.9,
+      "20g": 7.4
     },
     "Gen 5 Driver": {
       "7.5g": 0,
-      "2.5": -2.5,
+      "2.5": -2.9,
       "5g": -1.5,
       "10g": 1.5,
-      "12.5g": 3,
-      "15g": 4.5,
-      "17.5g": 6,
-      "20g": 7.5
+      "12.5g": 2.9,
+      "15g": 4.4,
+      "17.5g": 5.9,
+      "20g": 7.4
     },
     // Valor por defecto en caso de que no coincida
     "default": {
@@ -323,7 +327,7 @@ export default function UltraliteSwing() {
   const [shaft, setShaft] = useState("Fujikura Pro Blue 50 - R");
   const [head, setHead] = useState("Ultra Lite Driver");
   const [length, setLength] = useState("Standard");
-  const [grip, setGrip] = useState("PXG Z5 Standard");
+  const [grip, setGrip] = useState("PXG True Temper Icon Standard (Default)");
   const [wrap, setWrap] = useState("Standard");
   const [toe, setToe] = useState("NA");
   const [heel, setHeel] = useState("NA");
@@ -393,6 +397,11 @@ export default function UltraliteSwing() {
       backSwing
       ;
 
+    const roundbaseOperation = Math.round(baseOperation * 2) / 2;
+
+    console.log("Base operation", baseOperation);
+    console.log("Round Base operation", roundbaseOperation);
+
     return {
       result_shaft: searchSwing(shaftSwing),
       result_head: headSwing,
@@ -402,7 +411,7 @@ export default function UltraliteSwing() {
       result_toe: toeSwing,
       result_heel: heelSwing,
       result_back : backSwing,
-      driver: searchSwing(baseOperation),
+      driver: searchSwing(roundbaseOperation),
     };
   }, [shaft, head, length, grip, wrap, toe, heel, back]);
 

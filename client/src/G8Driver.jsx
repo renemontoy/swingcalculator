@@ -9,6 +9,7 @@ export default function DriverSwingG8() {
     "Fujikura Pro Blue 60 - X": "D4",
     "Fujikura Pro Blue 70 - S": "D5",
     "Fujikura Pro Blue 70 - X": "D5",
+    "Fujikura Sakura 40 - L": "D1",
     "Fujikura Ventus VeloCore+ Black 6 - S": "D4",
     "Fujikura Ventus VeloCore+ Black 6 - X": "D4",
     "Fujikura Ventus VeloCore+ Black 7 - S": "D5",
@@ -24,6 +25,22 @@ export default function DriverSwingG8() {
     "Fujikura Ventus VeloCore+ Red 5 - S": "D3",
     "Fujikura Ventus VeloCore+ Red 6 - S": "D4",
     "Grand Bassara 29 L": "D0",
+    "Graphite Design Tour AD FI 4 - A": "D4",
+    "Graphite Design Tour AD FI 5 - R": "D4",
+    "Graphite Design Tour AD FI 6 - S": "D5",
+    "Graphite Design Tour AD FI 6 - X": "D5",
+    "Graphite Design Tour AD FI 7 - S": "D7",
+    "Graphite Design Tour AD FI 7 - X": "D7",
+    "Graphite Design Tour AD GC 4 - A": "D3",
+    "Graphite Design Tour AD GC 5 - R": "D4",
+    "Graphite Design Tour AD GC 5 - S": "D4",
+    "Graphite Design Tour AD GC 6 - S": "D4",
+    "KBS PGW 50 - R": "D4",
+    "KBS PGW 60 - R": "D5",
+    "KBS PGW 60 - S": "D6",
+    "KBS PGW 60 - X": "D6",
+    "KBS PGW 70 - S": "D6",
+    "KBS PGW 70 - X": "D6",
     "MCA Diamana 2023 S+ 60g- R": "D3",
     "MCA Diamana 2023 S+ 60g- S": "D3",
     "MCA Diamana 2023 S+ 60g- X": "D4",
@@ -37,6 +54,11 @@ export default function DriverSwingG8() {
     "MCA Tensei AV X-Link White 65 X": "D4",
     "MCA Tensei AV X-Link White 75 S": "D6",
     "MCA Tensei AV X-Link White 75 X": "D6",
+    "Mitsubishi Kai'li Blue 60 R": "D5",
+    "Mitsubishi Kai'li Blue 60 S": "D5",
+    "Mitsubishi Kai'li Blue 60 X": "D5",
+    "Mitsubishi Kai'li Blue 70 S": "D5",
+    "Mitsubishi Kai'li Blue 70 X": "D5",
     "Project X Cypher 2.0 40 4.0": "D4",
     "Project X Cypher 2.0 40 5.0": "D2",
     "Project X Cypher 2.0 40 5.5": "D3",
@@ -49,6 +71,19 @@ export default function DriverSwingG8() {
     "Project X Denali Blue 60 6.0": "D4",
     "Project X Denali Blue 60 6.5": "D4",
     "Project X Denali Blue 70 6.5": "D4",
+    "Project X Denali Frost Blue 50 5.0": "D2",
+    "Project X Denali Frost Blue 50 5.5": "D3",
+    "Project X Denali Frost Blue 50 6.0": "D3",
+    "Project X Denali Frost Blue 60 5.5": "D3",
+    "Project X Denali Frost Blue 60 6.0": "D4",
+    "Project X Denali Frost Blue 60 6.5": "D4",
+    "Project X Denali Frost Blue 70 6.5": "D4",
+    "Project X Denali Frost Red 40 4.0": "D0",
+    "Project X Denali Frost Red 50 5.0": "D1",
+    "Project X Denali Frost Red 50 5.5": "D1",
+    "Project X Denali Frost Red 50 6.0": "D1",
+    "Project X Denali Frost Red 60 5.5": "D2",
+    "Project X Denali Frost Red 60 6.0": "D2",
     "Project X Denali Red 40 4.0": "D0",
     "Project X Denali Red 50 5.0": "D1",
     "Project X Denali Red 50 5.5": "D1",
@@ -76,7 +111,14 @@ export default function DriverSwingG8() {
     "Tour AD XC 5 - S": "D4",
     "Tour AD XC 6- S": "D4",
     "Tour AD XC 6- X": "D5",
-    "Tour AD XC 7-X": "D6"
+    "Tour AD XC 7-X": "D6",
+    "UST LIN - Q Blue CB 55 - A": "D3",
+    "UST LIN - Q Blue CB 55 - R": "D3",
+    "UST LIN - Q Blue CB 65 - R": "D5",
+    "UST LIN - Q White 65 - S": "D6",
+    "UST LIN - Q White 65 - X": "D6",
+    "UST LIN - Q White 75 - S": "D6",
+    "UST LIN - Q White 75 - X": "D7"
     };
 
 
@@ -107,38 +149,42 @@ export default function DriverSwingG8() {
   };
 
   const gripList = {
-    "PXG Z5 Undersize": 1,
-    "PXG Z5 Standard": 0,
-    "PXG Z5 Midsize": -2.5,
-    "PXG Z5 Oversize": -5.5,
-    "PXG Z5 Demo": 0,
-    "Golf Pride Tour Velvet 360 Undersize": 0.5,
-    "Golf Pride Tour Velvet 360 Standard": 0,
-    "Golf Pride Tour Velvet 360 Midsize": -1,
-    "Golf Pride Tour Velvet 360 Oversize": -3,
-    "Golf Pride Tour Velvet Womens": 0.5,
-    "Golf Pride Tour Velvet Standard": -0.5,
-    "Golf Pride Tour Velvet Midsize": -1,
+    "PXG Z5 Undersize": 1.3,
+    "PXG Z5 Standard": -0.6,
+    "PXG Z5 Midsize": -2.7,
+    "PXG Z5 Oversize": -5.1,
+    "PXG True Temper Icon Standard (Default)": 0,
+    "PXG True Temper Icon Midsize": -2.4,
+    "PXG True Temper Icon Oversized": -4.4,
+    "PXG True Temper Icon Undersized": 1.3,
+    "Golf Pride Tour Velvet 360 Undersize": 1.3,
+    "Golf Pride Tour Velvet 360 Standard": -0.4,
+    "Golf Pride Tour Velvet 360 Midsize": -1.6,
+    "Golf Pride Tour Velvet 360 Oversize": -3.3,
+    "Golf Pride Tour Velvet Womens": 0.2,
+    "Golf Pride Tour Velvet Standard": 0,
+    "Golf Pride Tour Velvet Midsize": -1.1,
     "Golf Pride Tour Wrap Black Standard": 0,
-    "Golf Pride Tour Wrap Black Midsize": -1,
-    "Golf Pride Tour Wrap White Standard": 0,
-    "Golf Pride Tour Wrap White Midsize": -1,
-    "Golf Pride MCC +4 Standard": -0.5,
+    "Golf Pride Tour Wrap Black Midsize": -1.6,
+    "Golf Pride Tour Wrap White Standard": -0.9,
+    "Golf Pride Tour Wrap White Midsize": -3.1,
+    "Golf Pride MCC +4 Standard": -0.9,
     "Golf Pride MCC +4 Midsize": -4,
-    "Golf Pride MCC +4 Align Standard": -1,
-    "Golf Pride Multi-Compound White Standard": 0.5,
-    "Golf Pride Multi-Compound White Midsize": -2.5,
+    "Golf Pride MCC +4 Align Standard": -0.7,
+    "Golf Pride Multi-Compound White Standard": 0.2,
+    "Golf Pride Multi-Compound White Midsize": -2.2,
     "Golf Pride Z-Cord Standard": 0,
-    "Golf Pride Z-Cord Midsize": -1.5,
+    "Golf Pride Z-Cord Midsize": -1.1,
     "Golf Pride CP2 Pro Standard": 0,
-    "Golf Pride CP2 Pro Midsize": -3,
-    "Golf Pride CP2 Wrap Undersize": 3,
+    "Golf Pride CP2 Pro Midsize": -3.1,
+    "Golf Pride CP2 Wrap Undersize": 1.1,
     "Golf Pride CP2 Wrap Standard": 0,
-    "Golf Pride CP2 Wrap Midsize": -3,
-    "Winn Dri-Tac Ladies": 3,
-    "Winn Dri-Tac Standard": 0.5,
-    "Winn Dri-Tac Midsize": 0,
-    "Winn Dri-Tac Oversize": 0,
+    "Golf Pride CP2 Wrap Midsize": -2.7,
+    "Winn Excel Wrap Oversize": 0.7,
+    "Winn Dri-Tac Ladies": 3.3,
+    "Winn Dri-Tac Standard": 0.4,
+    "Winn Dri-Tac Midsize": 0.4,
+    "Winn Dri-Tac Oversize": 0.4,
     "Winn Wrap Standard": 0,
     "Winn Wrap Midsize": 0,
     "Winn Wrap Oversize": 0
@@ -146,8 +192,8 @@ export default function DriverSwingG8() {
 
   const wrapList = {
     "Standard": 0,
-    "+1": 0,
-    "+2": -0.5,
+    "+1": -0.3,
+    "+2": -0.7,
     "+3": -1
     //"+1 Bottom Hand": 0,
     //"+2 Bottom Hand": 0,
@@ -166,33 +212,33 @@ export default function DriverSwingG8() {
   const toeOptions = {
     "Lightning Tour": {
       "7.5g": 0,
-      "2.5g": -2.5,
+      "2.5g": -2.9,
       "5g": -1.5,
       "10g": 1.5,
-      "12.5g": 3,
-      "15g": 4.5,
-      "17.5g": 6,
-      "20g": 7.5
+      "12.5g": 2.9,
+      "15g": 4.4,
+      "17.5g": 5.9,
+      "20g": 7.4
     },
     "Lightning Tour Mid": {
       "2.5g": 0,
-      "5g": 1,
-      "7.5g": 2.5,
-      "10g": 4,
-      "12.5g": 5.5,
-      "15g": 7,
-      "17.5g": 8.5,
-      "20g": 10
+      "5g": 1.5,
+      "7.5g": 2.9,
+      "10g": 4.4,
+      "12.5g": 5.9,
+      "15g": 7.4,
+      "17.5g": 8.8,
+      "20g": 10.3
     },
     "Lightning Max 10K": {
       "2.5g": 0,
-      "5g": 1,
-      "7.5g": 2.5,
-      "10g": 4,
-      "12.5g": 5.5,
-      "15g": 7,
-      "17.5g": 8.5,
-      "20g": 10
+      "5g": 1.5,
+      "7.5g": 2.9,
+      "10g": 4.4,
+      "12.5g": 5.9,
+      "15g": 7.4,
+      "17.5g": 8.8,
+      "20g": 10.3
     },
     // Valor por defecto en caso de que no coincida
     "default": {
@@ -203,33 +249,33 @@ export default function DriverSwingG8() {
   const HeelOptions = {
     "Lightning Tour": {
       "7.5g": 0,
-      "2.5g": -2.5,
-      "5g" : -1.5,
+      "2.5g": -2.9,
+      "5g": -1.5,
       "10g": 1.5,
-      "12.5g": 3,
-      "15g": 4.5,
-      "17.5g": 6,
-      "20g": 7.5
+      "12.5g": 2.9,
+      "15g": 4.4,
+      "17.5g": 5.9,
+      "20g": 7.4
     },
     "Lightning Tour Mid": {
-      "2.5": 0,
-      "5g": 1,
-      "7.5g": 2.5,
-      "10g": 4,
-      "12.5g": 5.5,
-      "15g": 7,
-      "17.5g": 8.5,
-      "20g": 10
+      "2.5g": 0,
+      "5g": 1.5,
+      "7.5g": 2.9,
+      "10g": 4.4,
+      "12.5g": 5.9,
+      "15g": 7.4,
+      "17.5g": 8.8,
+      "20g": 10.3
     },
     "Lightning Max 10K": {
-      "2.5": 0,
-      "5g": 1,
-      "7.5g": 2.5,
-      "10g": 4,
-      "12.5g": 5.5,
-      "15g": 7,
-      "17.5g": 8.5,
-      "20g": 10
+      "2.5g": 0,
+      "5g": 1.5,
+      "7.5g": 2.9,
+      "10g": 4.4,
+      "12.5g": 5.9,
+      "15g": 7.4,
+      "17.5g": 8.8,
+      "20g": 10.3
     },
     // Valor por defecto en caso de que no coincida
     "default": {
@@ -240,33 +286,33 @@ export default function DriverSwingG8() {
   const BackOptions = {
     "Lightning Tour": {
       "2.5g": 0,
-      "5g": 1,
-      "7.5g": 2.5,
-      "10g": 4,
-      "12.5g": 5.5,
-      "15g": 7,
-      "17.5g": 8.5,
-      "20g": 10
+      "5g": 1.5,
+      "7.5g": 2.9,
+      "10g": 4.4,
+      "12.5g": 5.9,
+      "15g": 7.4,
+      "17.5g": 8.8,
+      "20g": 10.3
     },
     "Lightning Tour Mid": {
       "15g": 0,
-      "2.5g": -7,
-      "5g" : -5.5,
-      "7.5g": -4.5,
-      "10g": -3,
+      "2.5g": -7.4,
+      "5g" : -5.9,
+      "7.5g": -4.4,
+      "10g": -2.9,
       "12.5g": -1.5,
       "17.5g": 1.5,
-      "20g": 3
+      "20g": 2.9
     },
     "Lightning Max 10K": {
       "15g": 0,
-      "2.5g": -7,
-      "5g" : -5.5,
-      "7.5g": -4.5,
-      "10g": -3,
+      "2.5g": -7.4,
+      "5g" : -5.9,
+      "7.5g": -4.4,
+      "10g": -2.9,
       "12.5g": -1.5,
       "17.5g": 1.5,
-      "20g": 3
+      "20g": 2.9
     },
     // Valor por defecto en caso de que no coincida
     "default": {
@@ -312,7 +358,7 @@ export default function DriverSwingG8() {
   const [shaft, setShaft] = useState("Fujikura Pro Blue 50 - R");
   const [head, setHead] = useState("Lightning Tour");
   const [length, setLength] = useState("Standard");
-  const [grip, setGrip] = useState("PXG Z5 Standard");
+  const [grip, setGrip] = useState("PXG True Temper Icon Standard (Default)");
   const [wrap, setWrap] = useState("Standard");
   const [toe, setToe] = useState(findInitialZeroValue(toeOptions, "Lightning Tour"));
   const [heel, setHeel] = useState(findInitialZeroValue(HeelOptions, "Lightning Tour"));
@@ -382,6 +428,11 @@ export default function DriverSwingG8() {
       backSwing
       ;
 
+    const roundbaseOperation = Math.round(baseOperation * 2) / 2;
+
+    console.log("Base operation", baseOperation);
+    console.log("Round Base operation", roundbaseOperation);
+
     return {
       result_shaft: searchSwing(shaftSwing),
       result_head: headSwing,
@@ -391,7 +442,7 @@ export default function DriverSwingG8() {
       result_toe: toeSwing,
       result_heel: heelSwing,
       result_back : backSwing,
-      driver: searchSwing(baseOperation),
+      driver: searchSwing(roundbaseOperation),
     };
   }, [shaft, head, length, grip, wrap, toe, heel, back]);
 

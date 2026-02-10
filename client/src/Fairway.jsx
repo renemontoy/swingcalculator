@@ -9,6 +9,7 @@ export default function FairwaySwing() {
     "Fujikura Pro Blue 60 - X": "D1",
     "Fujikura Pro Blue 70 - S": "D2",
     "Fujikura Pro Blue 70 - X": "D2",
+    "Fujikura Sakura 40 - L": "C9",
     "Fujikura Ventus VeloCore+ Black 6 - S": "D0",
     "Fujikura Ventus VeloCore+ Black 6 - X": "D0",
     "Fujikura Ventus VeloCore+ Black 7 - S": "D2",
@@ -24,6 +25,22 @@ export default function FairwaySwing() {
     "Fujikura Ventus VeloCore+ Red 5 - S": "D1",
     "Fujikura Ventus VeloCore+ Red 6 - S": "D1",
     "Grand Bassara 29 L": "C9",
+    "Graphite Design Tour AD FI 4 - A": "D1",
+    "Graphite Design Tour AD FI 5 - R": "D1",
+    "Graphite Design Tour AD FI 6 - S": "D2",
+    "Graphite Design Tour AD FI 6 - X": "D2",
+    "Graphite Design Tour AD FI 7 - S": "D3",
+    "Graphite Design Tour AD FI 7 - X": "D3",
+    "Graphite Design Tour AD GC 4 - A": "D0",
+    "Graphite Design Tour AD GC 5 - R": "D1",
+    "Graphite Design Tour AD GC 5 - S": "D1",
+    "Graphite Design Tour AD GC 6 - S": "D2",
+    "KBS PGW 50 - R": "D1",
+    "KBS PGW 60 - R": "D2",
+    "KBS PGW 60 - S": "D3",
+    "KBS PGW 60 - X": "D3",
+    "KBS PGW 70 - S": "D4",
+    "KBS PGW 70 - X": "D4",
     "MCA Diamana 2023 S+ 60g- R": "D0",
     "MCA Diamana 2023 S+ 60g- S": "D0",
     "MCA Diamana 2023 S+ 60g- X": "D0",
@@ -37,6 +54,11 @@ export default function FairwaySwing() {
     "MCA Tensei AV X-Link White 65 X": "D1",
     "MCA Tensei AV X-Link White 75 S": "D3",
     "MCA Tensei AV X-Link White 75 X": "D3",
+    "Mitsubishi Kai'li Blue 60 R": "D1",
+    "Mitsubishi Kai'li Blue 60 S": "D1",
+    "Mitsubishi Kai'li Blue 60 X": "D1",
+    "Mitsubishi Kai'li Blue 70 S": "D1",
+    "Mitsubishi Kai'li Blue 70 X": "D1",
     "Project X Cypher 2.0 40 4.0": "D0",
     "Project X Cypher 2.0 40 5.0": "C9",
     "Project X Cypher 2.0 40 5.5": "D0",
@@ -49,6 +71,19 @@ export default function FairwaySwing() {
     "Project X Denali Blue 60 6.0": "D1",
     "Project X Denali Blue 60 6.5": "D1",
     "Project X Denali Blue 70 6.5": "D1",
+    "Project X Denali Frost Blue 50 5.0": "D0",
+    "Project X Denali Frost Blue 50 5.5": "D0",
+    "Project X Denali Frost Blue 50 6.0": "D0",
+    "Project X Denali Frost Blue 60 5.5": "D1",
+    "Project X Denali Frost Blue 60 6.0": "D1",
+    "Project X Denali Frost Blue 60 6.5": "D1",
+    "Project X Denali Frost Blue 70 6.5": "D1",
+    "Project X Denali Frost Red 40 4.0": "C8",
+    "Project X Denali Frost Red 50 5.0": "C9",
+    "Project X Denali Frost Red 50 5.5": "C9",
+    "Project X Denali Frost Red 50 6.0": "C9",
+    "Project X Denali Frost Red 60 5.5": "D0",
+    "Project X Denali Frost Red 60 6.0": "D0",
     "Project X Denali Red 40 4.0": "C8",
     "Project X Denali Red 50 5.0": "C9",
     "Project X Denali Red 50 5.5": "C9",
@@ -76,7 +111,14 @@ export default function FairwaySwing() {
     "Tour AD XC 5 - S": "D1",
     "Tour AD XC 6- S": "D1",
     "Tour AD XC 6- X": "D2",
-    "Tour AD XC 7-X": "D2"
+    "Tour AD XC 7-X": "D2",
+    "UST LIN - Q Blue CB 55 - A": "D0",
+    "UST LIN - Q Blue CB 55 - R": "D0",
+    "UST LIN - Q Blue CB 65 - R": "D2",
+    "UST LIN - Q White 65 - S": "D3",
+    "UST LIN - Q White 65 - X": "D3",
+    "UST LIN - Q White 75 - S": "D3",
+    "UST LIN - Q White 75 - X": "D4"
     };
 
 
@@ -106,38 +148,42 @@ export default function FairwaySwing() {
   };
 
   const gripList = {
-    "PXG Z5 Undersize": 1,
-    "PXG Z5 Standard": 0,
-    "PXG Z5 Midsize": -2.5,
-    "PXG Z5 Oversize": -5.5,
-    "PXG Z5 Demo": 0,
-    "Golf Pride Tour Velvet 360 Undersize": 0.5,
-    "Golf Pride Tour Velvet 360 Standard": 0,
-    "Golf Pride Tour Velvet 360 Midsize": -1,
-    "Golf Pride Tour Velvet 360 Oversize": -3,
-    "Golf Pride Tour Velvet Womens": 0.5,
-    "Golf Pride Tour Velvet Standard": -0.5,
-    "Golf Pride Tour Velvet Midsize": -1,
+    "PXG Z5 Undersize": 1.3,
+    "PXG Z5 Standard": -0.6,
+    "PXG Z5 Midsize": -2.7,
+    "PXG Z5 Oversize": -5.1,
+    "PXG True Temper Icon Standard (Default)": 0,
+    "PXG True Temper Icon Midsize": -2.4,
+    "PXG True Temper Icon Oversized": -4.4,
+    "PXG True Temper Icon Undersized": 1.3,
+    "Golf Pride Tour Velvet 360 Undersize": 1.3,
+    "Golf Pride Tour Velvet 360 Standard": -0.4,
+    "Golf Pride Tour Velvet 360 Midsize": -1.6,
+    "Golf Pride Tour Velvet 360 Oversize": -3.3,
+    "Golf Pride Tour Velvet Womens": 0.2,
+    "Golf Pride Tour Velvet Standard": 0,
+    "Golf Pride Tour Velvet Midsize": -1.1,
     "Golf Pride Tour Wrap Black Standard": 0,
-    "Golf Pride Tour Wrap Black Midsize": -1,
-    "Golf Pride Tour Wrap White Standard": 0,
-    "Golf Pride Tour Wrap White Midsize": -1,
-    "Golf Pride MCC +4 Standard": -0.5,
+    "Golf Pride Tour Wrap Black Midsize": -1.6,
+    "Golf Pride Tour Wrap White Standard": -0.9,
+    "Golf Pride Tour Wrap White Midsize": -3.1,
+    "Golf Pride MCC +4 Standard": -0.9,
     "Golf Pride MCC +4 Midsize": -4,
-    "Golf Pride MCC +4 Align Standard": -1,
-    "Golf Pride Multi-Compound White Standard": 0.5,
-    "Golf Pride Multi-Compound White Midsize": -2.5,
+    "Golf Pride MCC +4 Align Standard": -0.7,
+    "Golf Pride Multi-Compound White Standard": 0.2,
+    "Golf Pride Multi-Compound White Midsize": -2.2,
     "Golf Pride Z-Cord Standard": 0,
-    "Golf Pride Z-Cord Midsize": -1.5,
+    "Golf Pride Z-Cord Midsize": -1.1,
     "Golf Pride CP2 Pro Standard": 0,
-    "Golf Pride CP2 Pro Midsize": -3,
-    "Golf Pride CP2 Wrap Undersize": 3,
+    "Golf Pride CP2 Pro Midsize": -3.1,
+    "Golf Pride CP2 Wrap Undersize": 1.1,
     "Golf Pride CP2 Wrap Standard": 0,
-    "Golf Pride CP2 Wrap Midsize": -3,
-    "Winn Dri-Tac Ladies": 3,
-    "Winn Dri-Tac Standard": 0.5,
-    "Winn Dri-Tac Midsize": 0,
-    "Winn Dri-Tac Oversize": 0,
+    "Golf Pride CP2 Wrap Midsize": -2.7,
+    "Winn Excel Wrap Oversize": 0.7,
+    "Winn Dri-Tac Ladies": 3.3,
+    "Winn Dri-Tac Standard": 0.4,
+    "Winn Dri-Tac Midsize": 0.4,
+    "Winn Dri-Tac Oversize": 0.4,
     "Winn Wrap Standard": 0,
     "Winn Wrap Midsize": 0,
     "Winn Wrap Oversize": 0
@@ -145,8 +191,8 @@ export default function FairwaySwing() {
 
   const wrapList = {
     "Standard": 0,
-    "+1": 0,
-    "+2": -0.5,
+    "+1": -0.3,
+    "+2": -0.7,
     "+3": -1
     //"+1 Bottom Hand": 0,
     //"+2 Bottom Hand": 0,
@@ -165,23 +211,23 @@ export default function FairwaySwing() {
   const toeOptions = {
     "Black Ops Fairway Wood": {
       "2.5g": 0,
-      "5g": 1,
-      "7.5g": 2.5,
-      "10g": 4,
-      "12.5g": 5.5,
-      "15g": 7,
-      "17.5g": 8.5,
-      "20g": 10
+      "5g": 1.3,
+      "7.5g": 2.6,
+      "10g": 3.9,
+      "12.5g": 5.3,
+      "15g": 6.6,
+      "17.5g": 7.9,
+      "20g": 9.2
     },
     "Gen 6 Fairway Wood": {
       "2.5g": 0,
-      "5g": 1,
-      "7.5g": 2.5,
-      "10g": 4,
-      "12.5g": 5.5,
-      "15g": 7,
-      "17.5g": 8.5,
-      "20g": 10
+      "5g": 1.3,
+      "7.5g": 2.6,
+      "10g": 3.9,
+      "12.5g": 5.3,
+      "15g": 6.6,
+      "17.5g": 7.9,
+      "20g": 9.2
     },
     // Valor por defecto en caso de que no coincida
     "default": {
@@ -191,24 +237,24 @@ export default function FairwaySwing() {
   
   const HeelOptions = {
     "Black Ops Fairway Wood": {
-      "12.5g": 0,
-      "2.5g": -5.5,
-      "5g" : -4.5,
-      "7.5g": -3,
-      "10g": -1.5,
-      "15g": 1.5,
-      "17.5g": 3,
-      "20g": 4.5
+      "2.5g": 0,
+      "5g": 1.3,
+      "7.5g": 2.6,
+      "10g": 3.9,
+      "12.5g": 5.3,
+      "15g": 6.6,
+      "17.5g": 7.9,
+      "20g": 9.2
     },
     "Gen 6 Fairway Wood": {
       "10g": 0,
-      "2.5": -4,
-      "5g": -3,
-      "7.5g": -1.5,
-      "12.5g": 1.5,
-      "15g": 3,
-      "17.5g": 4.5,
-      "20g": 6
+      "2.5": -3.9,
+      "5g": -2.6,
+      "7.5g": -1.3,
+      "12.5g": 1.3,
+      "15g": 2.6,
+      "17.5g": 3.9,
+      "20g": 5.3
     },
     // Valor por defecto en caso de que no coincida
     "default": {
@@ -218,24 +264,24 @@ export default function FairwaySwing() {
   
   const BackOptions = {
     "Black Ops Fairway Wood": {
-      "2.5g": 0,
-      "5g": 1,
-      "7.5g": 2.5,
-      "10g": 4,
-      "12.5g": 5.5,
-      "15g": 7,
-      "17.5g": 8.5,
-      "20g": 10
+      "12.5g": 0,
+      "2.5g": -5.3,
+      "5g" : -3.9,
+      "7.5g": -2.6,
+      "10g": -1.3,
+      "15g": 1.3,
+      "17.5g": 2.6,
+      "20g": 3.9
     },
     "Gen 6 Fairway Wood": {
       "10g": 0,
-      "2.5": -4,
-      "5g": -3,
-      "7.5g": -1.5,
-      "12.5g": 1.5,
-      "15g": 3,
-      "17.5g": 4.5,
-      "20g": 6
+      "2.5": -3.9,
+      "5g": -2.6,
+      "7.5g": -1.3,
+      "12.5g": 1.3,
+      "15g": 2.6,
+      "17.5g": 3.9,
+      "20g": 5.3
     },
     // Valor por defecto en caso de que no coincida
     "default": {
@@ -281,7 +327,7 @@ export default function FairwaySwing() {
   const [shaft, setShaft] = useState("Fujikura Pro Blue 50 - R");
   const [head, setHead] = useState("Black Ops Fairway Wood");
   const [length, setLength] = useState("Standard");
-  const [grip, setGrip] = useState("PXG Z5 Standard");
+  const [grip, setGrip] = useState("PXG True Temper Icon Standard (Default)");
   const [wrap, setWrap] = useState("Standard");
   const [toe, setToe] = useState(findInitialZeroValue(toeOptions, "Black Ops Fairway Wood"));
   const [heel, setHeel] = useState(findInitialZeroValue(HeelOptions, "Black Ops Fairway Wood"));
@@ -352,6 +398,11 @@ export default function FairwaySwing() {
       backSwing
       ;
 
+    const roundbaseOperation = Math.round(baseOperation * 2) / 2;
+
+    console.log("Base operation", baseOperation);
+    console.log("Round Base operation", roundbaseOperation);
+
     return {
       result_shaft: searchSwing(shaftSwing),
       result_head: headSwing,
@@ -361,7 +412,7 @@ export default function FairwaySwing() {
       result_toe: toeSwing,
       result_heel: heelSwing,
       result_back : backSwing,
-      driver: searchSwing(baseOperation),
+      driver: searchSwing(roundbaseOperation),
     };
   }, [shaft, head, length, grip, wrap, toe, heel, back]);
 

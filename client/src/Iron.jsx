@@ -29,10 +29,10 @@ export default function IronSwing() {
     "KBS Max Graphite 45 L- Parallel": "C7",
     "KBS Max Graphite 55 A- Parallel": "C8",
     "KBS Max Graphite 65 R- Parallel": "C8",
-    "KBS-S-Taper-Lite-R-Parallel": "C9",
-    "KBS-STaperLite-100-S-7ir": "C9",
     "KBS-CTaper-120-S-7ir": "D2",
     "KBS-CTaper-130-X-7ir": "D3",
+    "KBS-STaperLite-115-S-7ir": "C9",
+    "KBS-S-Taper-Lite-R-Parallel": "C9",
     "KBS-TGIGraphite-70-R-Iron": "C9",
     "KBS-TGIGraphite-80-S-Iron": "D0",
     "KBS-Tour-110-R-7ir": "D0",
@@ -45,18 +45,23 @@ export default function IronSwing() {
     "Mitsubishi MMT Taper 105 S - 7ir": "D2",
     "Mitsubishi MMT Taper 125 X - 7ir": "D2",
     "Nippon Modus Pro 105 R- 7": "D1",
-    "Nippon-NSPro-950GH-R-7ir": "D0",
-    "Nippon-NSPro-950GH-S-7ir": "D0",
     "Nippon-ModusPro-105-S-7ir": "D0",
     "Nippon-ModusPro-105-X-7ir": "D1",
     "Nippon-ModusPro-120-S-7ir": "D1",
     "Nippon-ModusPro-120-X-7ir": "D2",
+    "Nippon-NSPro-950GH-R-7ir": "D0",
+    "Nippon-NSPro-950GH-S-7ir": "D0",
     "Project X Cypher 2.0 40i 4.0 - Parallel": "C6",
     "Project X Cypher 2.0 50i 5.0 - Parallel": "C7",
     "Project X Cypher 2.0 60i 5.5 - Parallel": "C7",
+    "Project X Denali Silver 105i 6.0 - Parallel": "C9",
+    "Project X Denali Silver 50i 4.0 - Parallel": "C5",
+    "Project X Denali Silver 60i 5.0 - Parallel": "C6",
+    "Project X Denali Silver 70i 5.5 - Parallel": "C7",
+    "Project X Denali Silver 80i 6.0 - Parallel": "C7",
+    "ProjectX-PX-6.5-X-7ir": "D2",
     "ProjectX-PXLZ-6.0-S+-7ir": "D2",
     "ProjectX-PXLZ-6.5-X-7ir": "D3",
-    "ProjectX-PX-6.5-X-7ir": "D2",
     "UST Recoil 55 Dart F1- L": "C6",
     "UST Recoil 65 Dart F2- A": "C7",
     "UST Recoil 75 Dart F3- R": "C9",
@@ -95,47 +100,51 @@ export default function IronSwing() {
   };
 
   const gripList = {
-    "PXG Z5 Undersize": 1,
-    "PXG Z5 Standard": 0,
-    "PXG Z5 Midsize": -2.5,
-    "PXG Z5 Oversize": -5.5,
-    "PXG Z5 Demo": 0,
-    "Golf Pride Tour Velvet 360 Undersize": 0.5,
-    "Golf Pride Tour Velvet 360 Standard": 0,
-    "Golf Pride Tour Velvet 360 Midsize": -1,
-    "Golf Pride Tour Velvet 360 Oversize": -3,
-    "Golf Pride Tour Velvet Womens": 0.5,
-    "Golf Pride Tour Velvet Standard": -0.5,
-    "Golf Pride Tour Velvet Midsize": -1,
-    "Golf Pride Tour Wrap Black Standard": 0,
-    "Golf Pride Tour Wrap Black Midsize": -1,
-    "Golf Pride Tour Wrap White Standard": 0,
-    "Golf Pride Tour Wrap White Midsize": -1,
-    "Golf Pride MCC +4 Standard": -0.5,
-    "Golf Pride MCC +4 Midsize": -4,
-    "Golf Pride MCC +4 Align Standard": -1,
-    "Golf Pride Multi-Compound White Standard": 0.5,
-    "Golf Pride Multi-Compound White Midsize": -2.5,
-    "Golf Pride Z-Cord Standard": 0,
-    "Golf Pride Z-Cord Midsize": -1.5,
-    "Golf Pride CP2 Pro Standard": 0,
-    "Golf Pride CP2 Pro Midsize": -3,
-    "Golf Pride CP2 Wrap Undersize": 3,
-    "Golf Pride CP2 Wrap Standard": 0,
-    "Golf Pride CP2 Wrap Midsize": -3,
-    "Winn Dri-Tac Ladies": 3,
-    "Winn Dri-Tac Standard": 0.5,
-    "Winn Dri-Tac Midsize": 0,
-    "Winn Dri-Tac Oversize": 0,
-    "Winn Wrap Standard": 0,
-    "Winn Wrap Midsize": 0,
-    "Winn Wrap Oversize": 0
+    "PXG Z5 Undersize": 1.3,
+    "PXG Z5 Standard": -0.6,
+    "PXG Z5 Midsize": -2.7,
+    "PXG Z5 Oversize": -5.1,
+    "PXG True Temper Icon Standard (Default)": 0.0,
+    "PXG True Temper Icon Midsize": -2.4,
+    "PXG True Temper Icon Oversized": -4.4,
+    "PXG True Temper Icon Undersized": 1.3,
+    "Golf Pride Tour Velvet 360 Undersize": 1.3,
+    "Golf Pride Tour Velvet 360 Standard": -0.4,
+    "Golf Pride Tour Velvet 360 Midsize": -1.6,
+    "Golf Pride Tour Velvet 360 Oversize": -3.3,
+    "Golf Pride Tour Velvet Womens": 0.2,
+    "Golf Pride Tour Velvet Standard": 0.0,
+    "Golf Pride Tour Velvet Midsize": -1.1,
+    "Golf Pride Tour Wrap Black Standard": 0.0,
+    "Golf Pride Tour Wrap Black Midsize": -1.6,
+    "Golf Pride Tour Wrap White Standard": -0.9,
+    "Golf Pride Tour Wrap White Midsize": -3.1,
+    "Golf Pride MCC +4 Standard": -0.9,
+    "Golf Pride MCC +4 Midsize": -4.0,
+    "Golf Pride MCC +4 Align Standard": -0.7,
+    "Golf Pride Multi-Compound White Standard": 0.2,
+    "Golf Pride Multi-Compound White Midsize": -2.2,
+    "Golf Pride Z-Cord Standard": 0.0,
+    "Golf Pride Z-Cord Midsize": -1.1,
+    "Golf Pride CP2 Pro Standard": 0.0,
+    "Golf Pride CP2 Pro Midsize": -3.1,
+    "Golf Pride CP2 Wrap Undersize": 1.1,
+    "Golf Pride CP2 Wrap Standard": 0.0,
+    "Golf Pride CP2 Wrap Midsize": -2.7,
+    "Winn Excel Wrap Oversize": 0.7,
+    "Winn Dri-Tac Ladies": 3.3,
+    "Winn Dri-Tac Standard": 0.4,
+    "Winn Dri-Tac Midsize": 0.4,
+    "Winn Dri-Tac Oversize": 0.4,
+    "Winn Wrap Standard": 0.0,
+    "Winn Wrap Midsize": 0.0,
+    "Winn Wrap Oversize": 0.0
   };
 
   const wrapList = {
     "Standard": 0,
-    "+1": 0,
-    "+2": -0.5,
+    "+1": -0.3,
+    "+2": -0.7,
     "+3": -1
     //"+1 Bottom Hand": 0,
     //"+2 Bottom Hand": 0,
@@ -152,13 +161,20 @@ export default function IronSwing() {
   };
 
   const adjustmentList = {
-    "Standard": 0,
-    "+1" : 1,
-    "+2" : 2,
-    "+3" : 3,
-    "-1" : -1,
-    "-2" : -2
-  };
+    //"Standard": 0,
+    //"+1" : 1,
+    //"+2" : 2,
+    //"+3" : 3,
+    //"-1" : -1,
+    //"-2" : -2
+    "2g" : -2.6,
+    "4g" : -1.7,
+    "6g" : -0.9,
+    "8g" : 0.0,
+    "10g": 0.9,
+    "12g": 1.7,
+    "14g": 2.6
+    };
 
   const swingValues = {
     "A0": 1, "A0.5": 1.5, "A1": 2, "A1.5": 2.5, "A2": 3,
@@ -191,9 +207,9 @@ export default function IronSwing() {
   const [shaft, setShaft] = useState("Accra iSeries 50i");
   const [head, setHead] = useState("0311 XP - 7 Iron");
   const [length, setLength] = useState("Standard");
-  const [grip, setGrip] = useState("PXG Z5 Standard");
+  const [grip, setGrip] = useState("PXG True Temper Icon Standard (Default)");
   const [wrap, setWrap] = useState("Standard");
-  const [adjustment, setAdjustment] = useState("Standard");
+  const [adjustment, setAdjustment] = useState("8g");
 
   // --- Función para buscar swing por valor ---
   const searchSwing = (value) => {
@@ -217,6 +233,12 @@ export default function IronSwing() {
       wrapSwing +
       adjustmentSwing;
 
+     const roundbaseOperation = Math.round(baseOperation * 2) / 2;
+
+     console.log("Base operation", baseOperation);
+     console.log("Round Base operation", roundbaseOperation);
+
+    
     return {
       result_shaft: searchSwing(shaftSwing),
       result_head: headSwing,
@@ -224,12 +246,14 @@ export default function IronSwing() {
       result_grip: gripSwing,
       result_wraps: wrapSwing,
       result_adjustment: adjustmentSwing,
+      result_baseOperation: baseOperation,
+      result_round: roundbaseOperation,
 
-      irons: searchSwing(baseOperation),
-      pw: searchSwing(baseOperation + 1),
-      gw: searchSwing(baseOperation + 2),
-      sw: searchSwing(baseOperation + 3),
-      lw: searchSwing(baseOperation + 4),
+      irons: searchSwing(roundbaseOperation),
+      pw: searchSwing(roundbaseOperation + 1),
+      gw: searchSwing(roundbaseOperation + 2),
+      sw: searchSwing(roundbaseOperation + 3),
+      lw: searchSwing(roundbaseOperation + 4),
     };
   }, [shaft, head, length, grip, wrap, adjustment]);
 
