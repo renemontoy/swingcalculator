@@ -223,7 +223,7 @@ export default function HybridSwingG8() {
 
 
   // --- Estado del formulario ---
-  const [shaft, setShaft] = useState("Accra iSeries 50i");
+  const [shaft, setShaft] = useState("Accra iSeries 50i Iron - Parallel");
   const [head, setHead] = useState("Lightning Hybrid");
   const [length, setLength] = useState("Standard");
   const [grip, setGrip] = useState("PXG True Temper Icon Standard (Default)");

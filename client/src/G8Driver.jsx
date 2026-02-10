@@ -355,7 +355,7 @@ export default function DriverSwingG8() {
 };
 
   // --- Estado del formulario ---
-  const [shaft, setShaft] = useState("Fujikura Pro Blue 50 - R");
+  const [shaft, setShaft] = useState("Fujikura Grand Bassara 29 L");
   const [head, setHead] = useState("Lightning Tour");
   const [length, setLength] = useState("Standard");
   const [grip, setGrip] = useState("PXG True Temper Icon Standard (Default)");

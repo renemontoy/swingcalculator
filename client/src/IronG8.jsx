@@ -319,7 +319,7 @@ export default function IronSwingG8() {
 
 
   // --- Estado del formulario ---
-  const [shaft, setShaft] = useState("Accra iSeries 50i");
+  const [shaft, setShaft] = useState("Accra iSeries 50i - Parallel");
   const [head, setHead] = useState("Gen 8 0311 XP - 7 Iron");
   const [length, setLength] = useState("Standard");
   const [grip, setGrip] = useState("PXG True Temper Icon Standard (Default)");

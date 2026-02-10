@@ -254,7 +254,7 @@ export default function HybridSwing() {
 
 
   // --- Estado del formulario ---
-  const [shaft, setShaft] = useState("Accra iSeries 50i");
+  const [shaft, setShaft] = useState("Accra iSeries 50i Iron - Parallel");
   const [head, setHead] = useState("Black Ops Hybrid");
   const [length, setLength] = useState("Standard");
   const [grip, setGrip] = useState("PXG True Temper Icon Standard (Default)");
