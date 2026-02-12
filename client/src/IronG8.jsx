@@ -51,7 +51,7 @@ export default function IronSwingG8() {
     "Project X Denali Silver 60i 5.0 - Parallel": "C6",
     "Project X Denali Silver 70i 5.5 - Parallel": "C7",
     "Project X Denali Silver 80i 6.0 - Parallel": "C7",
-    "ProjectX PX 6.5 X ": "D2",
+    "ProjectX PX 6.5 X": "D2",
     "ProjectX PXLZ 6.0 S+": "D2",
     "ProjectX PXLZ 6.5 X": "D3",
     "True Temper Dynamic Gold 105 R": "D1",
@@ -71,7 +71,7 @@ export default function IronSwingG8() {
   const headList = {
     "Gen 8 0311 XP - 7 Iron": 0,
     "Gen 8 0311 P - 7 Iron": 0,
-    "Gen 8 0317 T - 7 Iron": 0,
+    "Gen 8 0311 T - 7 Iron": 0,
   };
 
   const lengthList = {
