@@ -209,7 +209,7 @@ export default function IronSwing() {
   const [length, setLength] = useState("Standard");
   const [grip, setGrip] = useState("PXG True Temper Icon Standard (Default)");
   const [wrap, setWrap] = useState("Standard");
-  const [adjustment, setAdjustment] = useState("8g");
+  const [adjustment, setAdjustment] = useState("Standard");
 
   // --- Función para buscar swing por valor ---
   const searchSwing = (value) => {
