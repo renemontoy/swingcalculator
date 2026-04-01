@@ -18,6 +18,7 @@ export default function IronSwing() {
     "Dynamic Gold 95 S - Parallel": "C9",
     "Elevate MP 95g R- Parallel": "D0",
     "Elevate MP 95g S- Parallel": "D1",
+    "KBS Ctaper 110 S" : "D1",
     "KBS Ctaper 120 S": "D2",
     "KBS Ctaper 130 X": "D3",
     "KBS Max Graphite 45 L - Parallel": "C7",
