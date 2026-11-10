@@ -53,6 +53,7 @@ export default function HybridSwingG8() {
 
   const headList = {
     "Lightning Hybrid":0,
+    "Raptor Hybrid": 0,
   };
 
   const lengthList = {
@@ -155,6 +156,16 @@ export default function HybridSwingG8() {
       "17.5g": 7.5,
       "20g": 8.8
     },
+    "Raptor Hybrid": {
+      "7.5g": 0,
+      "2.5g": -2.5,
+      "5g": -1.3,
+      "10g": 1.3,
+      "12.5g": 2.5,
+      "15g": 3.8,
+      "17.5g": 5.0,
+      "20g": 6.3
+    },
     // Valor por defecto en caso de que no coincida
     "default": {
       "NA": 0
@@ -171,6 +182,16 @@ export default function HybridSwingG8() {
       "15g": 6.3,
       "17.5g": 7.5,
       "20g": 8.8
+    },
+    "Raptor Hybrid": {
+      "7.5g": 0,
+      "2.5g": -2.5,
+      "5g": -1.3,
+      "10g": 1.3,
+      "12.5g": 2.5,
+      "15g": 3.8,
+      "17.5g": 5.0,
+      "20g": 6.3
     },
     // Valor por defecto en caso de que no coincida
     "default": {

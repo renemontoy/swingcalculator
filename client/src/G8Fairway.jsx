@@ -125,6 +125,7 @@ export default function FairwaySwingG8() {
   const headList = {
     "Lightning Fairway":0,
     "Lightning Tour Fairway": 0,
+    "Raptor Fairway": 0,
   };
 
   const lengthList = {
@@ -227,6 +228,16 @@ export default function FairwaySwingG8() {
       "17.5g": 7.9,
       "20g": 9.2
     },
+    "Raptor Fairway": {
+      "7.5g": 0,
+      "2.5g": -2.6,
+      "5g": -1.3,
+      "10g": 1.3,
+      "12.5g": 2.6,
+      "15g": 3.9,
+      "17.5g": 5.3,
+      "20g": 6.6
+    },
     // Valor por defecto en caso de que no coincida
     "default": {
       "NA": 0
@@ -243,6 +254,16 @@ export default function FairwaySwingG8() {
       "15g": 6.6,
       "17.5g": 7.9,
       "20g": 9.2
+    },
+    "Raptor Fairway": {
+      "7.5g": 0,
+      "2.5g": -2.6,
+      "5g": -1.3,
+      "10g": 1.3,
+      "12.5g": 2.6,
+      "15g": 3.9,
+      "17.5g": 5.3,
+      "20g": 6.6
     },
     // Valor por defecto en caso de que no coincida
     "default": {
@@ -263,6 +284,16 @@ export default function FairwaySwingG8() {
     },
     "Lightning Tour Fairway": {
       "2.5": 0,
+      "5g": 1.3,
+      "7.5g": 2.6,
+      "10g": 3.9,
+      "12.5g": 5.3,
+      "15g": 6.6,
+      "17.5g": 7.9,
+      "20g": 9.2
+    },
+    "Raptor Fairway": {
+      "2.5g": 0,
       "5g": 1.3,
       "7.5g": 2.6,
       "10g": 3.9,

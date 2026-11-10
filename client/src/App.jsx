@@ -11,13 +11,8 @@ import DriverSwingG8 from "./G8Driver";
 import MaxLiteG8 from "./G8MaxLite";
 import FairwaySwingG8 from "./G8Fairway";
 import HybridSwingG8 from "./G8Hybrid";
-import PutterLength from "./SwingLenght/LenghtPutter";
-import NavBarLength from "./navlength";
-import DriverLength from "./SwingLenght/LenghtDriver";
-import SecretWeaponLength from "./SwingLenght/LengthSecretWeapon";
-import FairwayLength from "./SwingLenght/LengthFairway";
-import HybridLength from "./SwingLenght/LenghtHybrid";
-import IronLength from "./SwingLenght/LenghtIrons";
+import WedgeSwing from "./Wedge";
+import DrivingIronSwing from "./DrivingIron";
 
 function App() {
   return (
@@ -29,6 +24,7 @@ function App() {
         {/* Ruta padre con Layout */}
         <Route path="/" element={<NavBar />}>
           <Route path="iron" element={<IronSwing />} />
+          <Route path="wedge" element={<WedgeSwing />} />
           <Route path="driver" element={<DriverSwing />} />
           <Route path="ultralite" element={<UltraliteSwing />} />
           <Route path="secretweapon" element={<SecretSwing />} />
@@ -39,6 +35,7 @@ function App() {
           <Route path="lightning/maxlite" element={<MaxLiteG8 />} />
           <Route path="lightning/fairway" element={<FairwaySwingG8 />} />
           <Route path="lightning/hybrid" element={<HybridSwingG8 />} />
+          <Route path="gen8/drivingiron" element={<DrivingIronSwing />} />
           </Route>
       </Routes>
     </BrowserRouter>

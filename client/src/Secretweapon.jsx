@@ -124,6 +124,7 @@ export default function SecretSwing() {
 
   const headList = {
     "Secret Weapon":0,
+    "Secret Weapon 2027":0,  
   };
 
   const lengthList = {
@@ -226,6 +227,16 @@ export default function SecretSwing() {
       "17.5g": 1.4,
       "20g": 2.8
     },
+    "Secret Weapon 2027": {
+      "7.5g": 0,
+      "2.5g": -2.6,
+      "5g": -1.3,
+      "10g": 1.3,
+      "12.5g": 2.6,
+      "15g": 3.9,
+      "17.5g": 5.3,
+      "20g": 6.6
+    },
     // Valor por defecto en caso de que no coincida
     "default": {
       "NA": 0
@@ -242,6 +253,16 @@ export default function SecretSwing() {
       "12.5g": -1.4,
       "17.5g": 1.4,
       "20g": 2.8
+    },
+    "Secret Weapon 2027": {
+      "7.5g": 0,
+      "2.5g": -2.6,
+      "5g": -1.3,
+      "10g": 1.3,
+      "12.5g": 2.6,
+      "15g": 3.9,
+      "17.5g": 5.3,
+      "20g": 6.6
     },
     // Valor por defecto en caso de que no coincida
     "default": {
@@ -260,6 +281,16 @@ export default function SecretSwing() {
       "17.5g": 8.3,
       "20g": 9.7
     },
+    "Secret Weapon 2027": {
+      "2.5g": 0,
+      "5g": 1.3,
+      "7.5g": 2.6,
+      "10g": 3.9,
+      "12.5g": 5.3,
+      "15g": 6.6,
+      "17.5g": 7.9,
+      "20g": 9.2
+    },
     // Valor por defecto en caso de que no coincida
     "default": {
       "NA": 0
@@ -276,6 +307,16 @@ export default function SecretSwing() {
       "15g": 6.9,
       "17.5g": 8.3,
       "20g": 9.7
+    },
+    "Secret Weapon 2027": {
+      "2.5g": 0,
+      "5g": 1.3,
+      "7.5g": 2.6,
+      "10g": 3.9,
+      "12.5g": 5.3,
+      "15g": 6.6,
+      "17.5g": 7.9,
+      "20g": 9.2
     },
     // Valor por defecto en caso de que no coincida
     "default": {
@@ -312,16 +353,22 @@ export default function SecretSwing() {
     "F7.5": 58.5, "F8": 59, "F8.5": 59.5, "F9": 60, "F9.5": 60.5
   };
 
+  const findInitialZeroValue = (options, head) => {
+  const headOptions = options[head] || options["default"];
+  const zeroOption = Object.entries(headOptions).find(([key, value]) => value === 0);
+  return zeroOption ? zeroOption[0] : Object.keys(headOptions)[0];
+};
+
   // --- Estado del formulario ---
   const [shaft, setShaft] = useState("Fujikura Grand Bassara 29 L");
   const [head, setHead] = useState("Secret Weapon");
   const [length, setLength] = useState("Standard");
   const [grip, setGrip] = useState("PXG True Temper Icon Standard (Default)");
   const [wrap, setWrap] = useState("Standard");
-  const [toe, setToe] = useState("NA");
-  const [heel, setHeel] = useState("NA");
-  const [back, setBack] = useState("NA");
-  const [front, setFront] = useState("NA");
+  const [toe, setToe] = useState(findInitialZeroValue(toeOptions, "Secret Weapon"));
+  const [heel, setHeel] = useState(findInitialZeroValue(HeelOptions, "Secret Weapon"));
+  const [back, setBack] = useState(findInitialZeroValue(BackOptions, "Secret Weapon"));
+  const [front, setFront] = useState(findInitialZeroValue(FrontOptions, "Secret Weapon"));
 
   // -----------TOE----------------
   // Obtener las opciones de toe según la cabeza seleccionada
@@ -349,23 +396,22 @@ export default function SecretSwing() {
 
 
   // Actualizar el valor de toe cuando cambie la cabeza
+  // Actualizar el valor de toe cuando cambie la cabeza
   const handleHeadChange = (e) => {
     const newHead = e.target.value;
     setHead(newHead);
     
-    // Resetear toe a la primera opción disponible para la nueva cabeza
-    const newToeOptions = getToeOptions();
-    const newHeelOptions = getHeelOptions();
-    const newBackOptions = getBackOptions();
-    const newFrontOptions = getFrontOptions();
-    const firstToeOption = Object.keys(newToeOptions)[0];
-    const firstHeelOption = Object.keys(newHeelOptions)[0];
-    const firstBackOption = Object.keys(newBackOptions)[0];
-    const firstFrontOption = Object.keys(newFrontOptions)[0];
-    setToe(firstToeOption);
-    setHeel(firstHeelOption);
-    setBack(firstBackOption);
-    setFront(firstFrontOption);
+    // Función para encontrar la opción con valor 0
+    const findZeroOption = (options) => {
+        const headOptions = options[newHead] || options["default"];
+        const zeroOption = Object.entries(headOptions).find(([key, value]) => value === 0);
+        return zeroOption ? zeroOption[0] : Object.keys(headOptions)[0];
+    };
+    
+    setToe(findZeroOption(toeOptions));
+    setHeel(findZeroOption(HeelOptions));
+    setBack(findZeroOption(BackOptions));
+    setFront(findZeroOption(FrontOptions));
   };
 
   // --- Función para buscar swing por valor ---

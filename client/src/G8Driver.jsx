@@ -126,6 +126,10 @@ export default function DriverSwingG8() {
     "Lightning Tour":0,
     "Lightning Tour Mid": 0,
     "Lightning Max 10K": 0,
+    "Raptor X10K+": 0,
+    "Raptor XLite": 0,
+    "Raptor XLR": 0,
+    "Raptor XLS": 0,
   };
 
   const lengthList = {
@@ -248,6 +252,26 @@ export default function DriverSwingG8() {
       "17.5g": 8.8,
       "20g": 10.3
     },
+    "Raptor XLR": {
+      "7.5g": 0,
+      "2.5g": -2.9,
+      "5g": -1.5,
+      "10g": 1.5,
+      "12.5g": 2.9,
+      "15g": 4.4,
+      "17.5g": 5.9,
+      "20g": 7.4
+    },
+    "Raptor XLS": {
+      "7.5g": 0,
+      "2.5g": -2.9,
+      "5g": -1.5,
+      "10g": 1.5,
+      "12.5g": 2.9,
+      "15g": 4.4,
+      "17.5g": 5.9,
+      "20g": 7.4
+    },
     // Valor por defecto en caso de que no coincida
     "default": {
       "NA": 0
@@ -285,6 +309,46 @@ export default function DriverSwingG8() {
       "17.5g": 8.8,
       "20g": 10.3
     },
+    "Raptor X10K+": {
+      "2.5g": 0,
+      "5g": 1.5,
+      "7.5g": 2.9,
+      "10g": 4.4,
+      "12.5g": 5.9,
+      "15g": 7.4,
+      "17.5g": 8.8,
+      "20g": 10.3
+    },
+    "Raptor XLite": {
+      "2.5g": 0,
+      "5g": 1.5,
+      "7.5g": 2.9,
+      "10g": 4.4,
+      "12.5g": 5.9,
+      "15g": 7.4,
+      "17.5g": 8.8,
+      "20g": 10.3
+    },
+    "Raptor XLR": {
+      "7.5g": 0,
+      "2.5g": -2.9,
+      "5g": -1.5,
+      "10g": 1.5,
+      "12.5g": 2.9,
+      "15g": 4.4,
+      "17.5g": 5.9,
+      "20g": 7.4
+    },
+    "Raptor XLS": {
+      "7.5g": 0,
+      "2.5g": -2.9,
+      "5g": -1.5,
+      "10g": 1.5,
+      "12.5g": 2.9,
+      "15g": 4.4,
+      "17.5g": 5.9,
+      "20g": 7.4
+    },
     // Valor por defecto en caso de que no coincida
     "default": {
       "NA": 0
@@ -321,6 +385,46 @@ export default function DriverSwingG8() {
       "12.5g": -1.5,
       "17.5g": 1.5,
       "20g": 2.9
+    },
+    "Raptor X10K+": {
+      "15g": 0,
+      "2.5g": -7.4,
+      "5g": -5.9,
+      "7.5g": -4.4,
+      "10g": -2.9,
+      "12.5g": -1.5,
+      "17.5g": 1.5,
+      "20g": 2.9
+    },
+    "Raptor XLite": {
+      "12.5g": 0,
+      "2.5g": -5.9,
+      "5g": -4.4,
+      "7.5g": -2.9,
+      "10g": -1.5,
+      "15g": 1.5,
+      "17.5g": 2.9,
+      "20g": 4.4
+    },
+    "Raptor XLR": {
+      "2.5g": 0,
+      "5g": 1.5,
+      "7.5g": 2.9,
+      "10g": 4.4,
+      "12.5g": 5.9,
+      "15g": 7.4,
+      "17.5g": 8.8,
+      "20g": 10.3
+    },
+    "Raptor XLS": {
+      "2.5g": 0,
+      "5g": 1.5,
+      "7.5g": 2.9,
+      "10g": 4.4,
+      "12.5g": 5.9,
+      "15g": 7.4,
+      "17.5g": 8.8,
+      "20g": 10.3
     },
     // Valor por defecto en caso de que no coincida
     "default": {

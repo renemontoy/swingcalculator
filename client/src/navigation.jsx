@@ -89,7 +89,9 @@ const NavBar = () => {
               {openDropdowns.gen8 && (
                 <div className="dropdown-menu">
                   <Link to="/gen8/iron" className="dropdown-item" onClick={() => toggleDropdown('gen8')}>Iron</Link>
+                  <Link to="/gen8/drivingiron" className="dropdown-item" onClick={() => toggleDropdown('gen8')}>Driving Iron</Link>
                 </div>
+
               )}
             </div>
             {/* GEN 7 */}
@@ -103,6 +105,7 @@ const NavBar = () => {
               {openDropdowns.gen7 && (
                 <div className="dropdown-menu">
                   <Link to="/iron" className="dropdown-item" onClick={() => toggleDropdown('gen7')}>Iron</Link>
+                  <Link to="/wedge" className="dropdown-item" onClick={() => toggleDropdown('gen7')}>Wedge</Link>
                   <Link to="/driver" className="dropdown-item" onClick={() => toggleDropdown('gen7')}>Driver</Link>
                   <Link to="/ultralite" className="dropdown-item" onClick={() => toggleDropdown('gen7')}>Ultra Lite</Link>
                   <Link to="/secretweapon" className="dropdown-item" onClick={() => toggleDropdown('gen7')}>Secret Weapon</Link>

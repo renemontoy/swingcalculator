@@ -70,14 +70,18 @@ export default function IronSwing() {
   };
 
   const headList = {
-    "0311 XP - 7 Iron": 1.5,
-    "0311 P - 7 Iron": 0,
-    "0317 T - 7 Iron": 0,
-    "0317 CB - 7 Iron": 0,
-    "0317 ST - 7 Iron": 0,
-    "Black Ops - 7 Iron": 0,
-    "Wildcat - 7 Iron": 0,
-    "0211 - 7 Iron": 0
+    //"0311 XP - 7 Iron": 1.5,
+    //"0311 P - 7 Iron": 0,
+    //"0317 T - 7 Iron": 0,
+    //"0317 CB - 7 Iron": 0,
+    //"0317 ST - 7 Iron": 0,
+    //"Black Ops - 7 Iron": 0,
+    //"Wildcat - 7 Iron": 0,
+    //"0211 - 7 Iron": 0
+    "Patriot P": 0,
+    "Patriot XP": 1.5,
+    "0317 Tour": 0,
+    "0317": 0,
   };
 
   const lengthList = {
@@ -321,7 +325,7 @@ export default function IronSwing() {
 
   // --- Estado del formulario ---
   const [shaft, setShaft] = useState("Accra iSeries 50i - Parallel");
-  const [head, setHead] = useState("0311 XP - 7 Iron");
+  const [head, setHead] = useState("Patriot P");
   const [length, setLength] = useState("Standard");
   const [grip, setGrip] = useState("PXG True Temper Icon Standard (Default)");
   const [wrap, setWrap] = useState("Standard");
